@@ -5,13 +5,11 @@ import java.util.List;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-public class Sheet {
-	
+public class SpreadSheet {
 	@JsonProperty
 	public int index;
 	@JsonProperty
 	public Attribute attribute = new Attribute();
 	@JsonProperty
 	public List<Selector> selectorList = new ArrayList<>();
-
 }

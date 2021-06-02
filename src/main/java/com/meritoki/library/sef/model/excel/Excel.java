@@ -8,6 +8,8 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 public class Excel {
 	
 	@JsonProperty
-	List<Sheet> sheetList = new ArrayList<>();
+	public String fileName;
+	@JsonProperty
+	public List<SpreadSheet> spreadSheetList = new ArrayList<>();
 
 }

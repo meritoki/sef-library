@@ -8,5 +8,5 @@ import com.meritoki.library.sef.model.excel.Excel;
 
 public class Batch {
 	@JsonProperty
-	List<Excel> excelList = new ArrayList<>();
+	public List<Excel> excelList = new ArrayList<>();
 }

@@ -5,5 +5,5 @@ import java.util.Map;
 
 public class Attribute {
 
-	Map<String,String> map = new HashMap<>();
+	public Map<String,String> map = new HashMap<>();
 }
