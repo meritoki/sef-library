@@ -1,12 +1,12 @@
 {
   "excelList" : [ {
     "fileName" : "/home/jorodriguez/Drive/UTN/Documents/UTN/File/Data/Volume/1881/OMA 1881 TII - 1860 Bahía Blanca + Observaciones.xlsx",
-    "sheetList" : [ {
+    "spreadSheetList" : [ {
       "index" : 1,
       "attribute" : {
         "map" : {
           "key" : "value",
-          "month":"December",
+          "month":"12",
           "year":"1860"
         }
       },
@@ -15,6 +15,11 @@
         "value" : "5-14,21-30,37-47:1",
         "statistic" : "point",
         "units" : "day"
+      },{
+        "variable" : "dd",
+        "value" : "5-14,21-30,37-47:5",
+        "statistic" : "point",
+        "units" : "NA"
       } ]
     } ]
   } ]

@@ -6,6 +6,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 import org.apache.commons.cli.CommandLine;
 import org.apache.commons.cli.CommandLineParser;
@@ -15,6 +16,7 @@ import org.apache.commons.cli.Option;
 import org.apache.commons.cli.Options;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.apache.poi.ss.usermodel.CellType;
 import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
@@ -26,6 +28,7 @@ import com.meritoki.library.sef.model.batch.Batch;
 import com.meritoki.library.sef.model.excel.Excel;
 import com.meritoki.library.sef.model.excel.Selector;
 import com.meritoki.library.sef.model.excel.SpreadSheet;
+import com.meritoki.library.sef.model.format.Format;
 import com.meritoki.library.sef.model.unit.Frame;
 import com.meritoki.library.sef.model.unit.Input;
 
@@ -92,16 +95,19 @@ public class Library {
 	}
 	
 	public static void process(Batch batch) {
-		List<Excel> excelList = batch.excelList;
+		List<Excel> excelList = batch.excels;
 		for(Excel excel: excelList) {
 			XSSFWorkbook workbook = getWorkbook(excel.fileName);
 			if(workbook != null) {
-				List<SpreadSheet> spreadSheetList = excel.spreadSheetList;
+				List<SpreadSheet> spreadSheetList = excel.spreadSheets;
 				for(SpreadSheet spreadsheet: spreadSheetList) {
 					Frame frame = new Frame();
+					frame.attribute = spreadsheet.attribute;
 					XSSFSheet sheet = (XSSFSheet) workbook.getSheetAt(spreadsheet.index);
-					List<Selector> selectorList = spreadsheet.selectorList;
+					logger.info("process(batch) sheet.getSheetName()="+sheet.getSheetName());
+					List<Selector> selectorList = spreadsheet.selectors;
 					for(Selector selector: selectorList) {
+						logger.info("process(batch) selector="+selector);
 						Object[] valueArray = selector.getValueArray();
 						if(valueArray != null) {
 							List<Integer> rowList = (List<Integer>) valueArray[0];
@@ -114,17 +120,53 @@ public class Library {
 										int columnIndex = columnList.get(j);
 										XSSFCell cell = row.getCell(columnIndex);
 										if(cell != null) {
-											System.out.println();
 											Input input = new Input();
-											input.map.put("variable",selector.variable);
-											input.map.put("value",cell.getRawValue());
-											input.map.put("statistic",selector.statistic);
-											input.map.put("units",selector.units);
 											List<Input> inputList = frame.inputMap.get(rowIndex);
 											if(inputList == null) {
 												inputList = new ArrayList<>();
 											}
-											inputList.add(input);
+											String value;
+											//BLANK - Add to conditional statements 
+											
+											if(cell.getCellType()==CellType.NUMERIC) {
+												value = cell.getRawValue();
+												input.map.put("variable",selector.variable);
+												input.map.put("value",value);
+												input.map.put("statistic",selector.statistic);
+												input.map.put("units",selector.units);
+												inputList.add(input);
+											} else {
+												value = cell.getStringCellValue();
+												if(selector.delimeter != null) {
+													String[] vArray = value.split(selector.delimeter);
+													String[] hourArray = (selector.hour != null)? selector.hour.split(","):new String[0];
+													String[] minuteArray = (selector.minute != null && !selector.minute.equals("null"))?selector.minute.split(","):new String[0];
+													for(int p = 0; p < vArray.length;p++) {
+														input = new Input();
+														value = vArray[p].trim();
+														value = getAlias(selector.variable,value);
+														input.map.put("variable",selector.variable);
+														input.map.put("value",value);
+														input.map.put("statistic",selector.statistic);
+														input.map.put("units",selector.units);
+														if(p < hourArray.length) {
+															input.map.put("hour",hourArray[p]);
+														}
+														if(p < minuteArray.length) {
+															input.map.put("minute",minuteArray[p]);
+														}
+														inputList.add(input);
+													}
+												} else {
+													value = getAlias(selector.variable,value);
+													input.map.put("variable",selector.variable);
+													input.map.put("value",value);
+													input.map.put("statistic",selector.statistic);
+													input.map.put("units",selector.units);
+													inputList.add(input);
+												}
+											}
+											logger.info("process(batch) value["+rowIndex+","+columnIndex+"]="+value);
 											frame.inputMap.put(rowIndex,inputList);
 										}else {
 											System.err.println("cell is null");
@@ -140,9 +182,30 @@ public class Library {
 				}
 			}
 		}
+		
+		
+		File output = new File(model.batch.outputPath);
+		if(!output.exists()) {
+			output.mkdirs();
+		}
+		List<Format> formatList = model.getFormatList();
+		for(Format format: formatList) {
+			String fileName = model.batch.getFileNamePrefix()+"_"+format.table.getName()+".tsv";
+			NodeController.save(model.batch.outputPath, fileName, format.getStringList());
+		}
+	}
+	
+	public static String getAlias(String variable, String key) {
+		String value = null;
+		Map<String,String> aliasMap = model.batch.alias.get(variable);
+		if(aliasMap != null) {
+			value = aliasMap.get(key);
+		}
+		return (value != null)?value:key;
 	}
 	
 	public static XSSFWorkbook getWorkbook(String fileName) {
+		logger.info("getWorkbook("+fileName+")");
         FileInputStream inputStream;
         XSSFWorkbook workbook = null;
 		try {

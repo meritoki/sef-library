@@ -5,5 +5,4 @@ import java.util.Map;
 
 public class Input {
 	public Map<String, String> map = new HashMap<>();
-
 }

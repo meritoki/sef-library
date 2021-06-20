@@ -6,10 +6,10 @@ import java.util.List;
 import com.meritoki.library.sef.controller.node.NodeController;
 
 public class Format {
-	public String filePath;
-	public String fileName;
-	public Header header;
-	public Table table;
+	public String filePath = ".";
+	public String fileName = "test.txt";//<Source_Code>_<Station_Code>_<StartDate>_<EndDate>_<Variable>.tsv
+	public Header header = new Header();
+	public Table table = new Table();
 	
 	public Header getHeader() {
 		return header;
@@ -24,11 +24,17 @@ public class Format {
 		this.table = table;
 	}
 	
+	public List<String> getStringList() {
+		List<String> stringList = new ArrayList<>();
+		stringList.addAll(this.header.getStringList());
+		stringList.add(Data.getHeaderString());
+		stringList.addAll(this.table.getDataStringList());
+		return stringList;
+	}
+	
 	public void write() {
 		if(this.filePath != null && this.fileName != null) {
-			List<String> stringList = new ArrayList<>();
-			stringList.addAll(this.header.getStringList());
-			stringList.addAll(this.table.getDataStringList());
+			List<String> stringList = this.getStringList();
 			NodeController.save(this.filePath, this.fileName, stringList);
 		} else {
 			System.err.println("filePath or fileName is null");

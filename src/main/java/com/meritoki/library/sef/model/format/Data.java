@@ -8,7 +8,10 @@ public class Data {
 	public Integer hour;
 	public Integer minute;
 	public String period;
-	public Double value;
+	public String value;
+	public String variable;
+	public String units;
+	public String statistic;
 	public Integer meta;
 	
 	public static String getHeaderString() {

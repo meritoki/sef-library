@@ -30,7 +30,7 @@ public class ParseController {
 		} else {
 			System.err.println("invalid index: "+index);
 		}
-		System.out.println("parseIndex("+index+") indexList="+indexList);
+//		System.out.println("parseIndex("+index+") indexList="+indexList);
 		return indexList;
 	}
 	

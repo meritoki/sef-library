@@ -1,0 +1,39 @@
+{
+  "outputPath" : ".",
+  "sef" : "1.0.0",
+  "source" : {
+    "name" : null,
+    "code" : null,
+    "link" : null
+  },
+  "station" : {
+    "name" : null,
+    "id" : null,
+    "code" : null,
+    "latitude" : null,
+    "longitude" : null,
+    "altitude" : null
+  },
+  "alias" : { },
+  "meta" : {
+    "key" : "value"
+  },
+  "excels" : [ {
+    "fileName" : null,
+    "spreadSheets" : [ {
+      "index" : 0,
+      "attribute" : {
+        "key" : "value"
+      },
+      "selectors" : [ {
+        "variable" : null,
+        "value" : null,
+        "statistic" : "point",
+        "units" : null,
+        "delimeter" : null,
+        "hour" : null,
+        "minute" : null
+      } ]
+    } ]
+  } ]
+}

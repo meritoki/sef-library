@@ -10,6 +10,6 @@ public class Excel {
 	@JsonProperty
 	public String fileName;
 	@JsonProperty
-	public List<SpreadSheet> spreadSheetList = new ArrayList<>();
+	public List<SpreadSheet> spreadSheets = new ArrayList<>();
 
 }

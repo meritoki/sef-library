@@ -1,0 +1,55 @@
+{
+  "outputPath" : ".",
+  "sef" : "1.0.0",
+  "source" : {
+    "name" : "UTN_ACRE",
+    "code" : "C3S_Argentina",
+    "link" : "NA"
+  },
+  "station" : {
+    "name" : "Bahía Blanca",
+    "id" : "Bahía_Blanca",
+    "code" : "Bahía_Blanca",
+    "latitude" : 1.0,
+    "longitude" : 1.0,
+    "altitude" : 1.0
+  },
+  "meta" : {
+    "key" : "value"
+  },
+  "alias" : {
+    "N" : "0",
+    "NE" : "45",
+    "E" : "90",
+    "SE" : "135",
+    "S" : "180",
+    "SW" : "225",
+    "W" : "270",
+    "NW" : "315"
+  },
+  "excels" : [ {
+    "fileName" : "/home/jorodriguez/Drive/UTN/Documents/UTN/File/Data/Volume/1881/OMA 1881 TII - 1860 Bahía Blanca + Observaciones.xlsx",
+    "spreadSheets" : [ {
+      "index" : 1,
+      "attribute" : {
+	  "key" : "value",
+	  "month":"1",
+	  "year":"1860"
+      },
+      "selectors" : [ {
+        "variable" : "time",
+        "value" : "5-14,21-30,37-47:1",
+        "statistic" : "point",
+        "units" : "day"
+      },{
+        "variable" : "dd",
+        "value" : "5-14,21-30,37-47:5",
+        "statistic" : "point",
+        "units" : "deg",
+        "delimeter" : "\\.",
+        "hour" : "6,12,18",
+        "minute" : "0,0,0"
+      } ]
+    } ]
+  } ]
+}
