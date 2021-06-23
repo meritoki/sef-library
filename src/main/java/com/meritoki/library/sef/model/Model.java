@@ -42,7 +42,6 @@ public class Model {
 				String variable = dataEntry.getKey();
 				List<Data> dataList = dataEntry.getValue();
 				if(dataList.size() > 0) {
-					Collections.reverse(dataList);
 					Data data = dataList.get(0);
 					Format format = this.formatMap.get(variable);
 					if(format == null) {

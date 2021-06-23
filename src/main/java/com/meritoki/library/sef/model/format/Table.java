@@ -16,7 +16,9 @@ public class Table {
 	public List<String> getDataStringList() {
 		LinkedList<String> dataStringList = new LinkedList<>();
 		for(Data data: dataList) {
-			dataStringList.addLast(data.getTabString());
+			String dataString = data.getTabString();
+			System.out.println("getDataStringList() dataString="+dataString);
+			dataStringList.addLast(dataString);
 		}
 		return dataStringList;
 	}

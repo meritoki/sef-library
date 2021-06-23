@@ -99,12 +99,13 @@ public class Library {
 		for(Excel excel: excelList) {
 			XSSFWorkbook workbook = getWorkbook(excel.fileName);
 			if(workbook != null) {
+				logger.info("process(batch) workbook="+excel.fileName);
 				List<SpreadSheet> spreadSheetList = excel.spreadSheets;
 				for(SpreadSheet spreadsheet: spreadSheetList) {
 					Frame frame = new Frame();
 					frame.attribute = spreadsheet.attribute;
 					XSSFSheet sheet = (XSSFSheet) workbook.getSheetAt(spreadsheet.index);
-					logger.info("process(batch) sheet.getSheetName()="+sheet.getSheetName());
+					logger.info("process(batch) sheet="+sheet.getSheetName());
 					List<Selector> selectorList = spreadsheet.selectors;
 					for(Selector selector: selectorList) {
 						logger.info("process(batch) selector="+selector);
@@ -126,54 +127,51 @@ public class Library {
 												inputList = new ArrayList<>();
 											}
 											String value;
-											//BLANK - Add to conditional statements 
-											
-											if(cell.getCellType()==CellType.NUMERIC) {
+											switch(cell.getCellType()) {
+											case BLANK: {
+												logger.info("process(batch) BLANK value["+rowIndex+","+columnIndex+"]");
+												logger.info("process(batch) sheet="+sheet.getSheetName());
+												logger.info("process(batch) workbook="+excel.fileName);
+												break;
+											}
+											case NUMERIC: {
 												value = cell.getRawValue();
+												logger.info("process(batch) NUMERIC value["+rowIndex+","+columnIndex+"]="+value);
 												input.map.put("variable",selector.variable);
 												input.map.put("value",value);
 												input.map.put("statistic",selector.statistic);
 												input.map.put("units",selector.units);
 												inputList.add(input);
-											} else {
-												value = cell.getStringCellValue();
-												if(selector.delimeter != null) {
-													String[] vArray = value.split(selector.delimeter);
-													String[] hourArray = (selector.hour != null)? selector.hour.split(","):new String[0];
-													String[] minuteArray = (selector.minute != null && !selector.minute.equals("null"))?selector.minute.split(","):new String[0];
-													for(int p = 0; p < vArray.length;p++) {
-														input = new Input();
-														value = vArray[p].trim();
-														value = getAlias(selector.variable,value);
-														input.map.put("variable",selector.variable);
-														input.map.put("value",value);
-														input.map.put("statistic",selector.statistic);
-														input.map.put("units",selector.units);
-														if(p < hourArray.length) {
-															input.map.put("hour",hourArray[p]);
-														}
-														if(p < minuteArray.length) {
-															input.map.put("minute",minuteArray[p]);
-														}
-														inputList.add(input);
-													}
-												} else {
-													value = getAlias(selector.variable,value);
-													input.map.put("variable",selector.variable);
-													input.map.put("value",value);
-													input.map.put("statistic",selector.statistic);
-													input.map.put("units",selector.units);
-													inputList.add(input);
-												}
+												break;
 											}
-											logger.info("process(batch) value["+rowIndex+","+columnIndex+"]="+value);
+											case BOOLEAN:
+												logger.warn("process(batch) BOOLEAN not supported");
+												break;
+											case ERROR:
+												logger.warn("process(batch) ERROR not supported");
+												break;
+											case FORMULA:
+												logger.warn("process(batch) FORMULA not supported");
+												break;
+											case STRING:
+												value = cell.getStringCellValue();
+												logger.info("process(batch) STRING value["+rowIndex+","+columnIndex+"]="+value);
+												inputList = getInputList(selector,value);
+												break;
+											case _NONE:
+												logger.warn("process(batch) _NONE not supported");
+												break;
+											default:
+												logger.warn("process(batch) not supported");
+												break;
+											}
 											frame.inputMap.put(rowIndex,inputList);
 										}else {
-											System.err.println("cell is null");
+											logger.warn("process(batch) cell is null");
 										}
 									}
 								} else {
-									System.err.println("row is null");
+									logger.warn("process(batch) row is null");
 								}
 							}
 						}
@@ -193,6 +191,40 @@ public class Library {
 			String fileName = model.batch.getFileNamePrefix()+"_"+format.table.getName()+".tsv";
 			NodeController.save(model.batch.outputPath, fileName, format.getStringList());
 		}
+	}
+	
+	public static List<Input> getInputList(Selector selector, String value) {
+		List<Input> inputList = new ArrayList<>();
+		if(selector.delimeter != null) {
+			String[] vArray = value.split(selector.delimeter);
+			String[] hourArray = (selector.hour != null)? selector.hour.split(","):new String[0];
+			String[] minuteArray = (selector.minute != null && !selector.minute.equals("null"))?selector.minute.split(","):new String[0];
+			for(int p = 0; p < vArray.length;p++) {
+				Input input = new Input();
+				value = vArray[p].trim();
+				value = getAlias(selector.variable,value);
+				input.map.put("variable",selector.variable);
+				input.map.put("value",value);
+				input.map.put("statistic",selector.statistic);
+				input.map.put("units",selector.units);
+				if(p < hourArray.length) {
+					input.map.put("hour",hourArray[p]);
+				}
+				if(p < minuteArray.length) {
+					input.map.put("minute",minuteArray[p]);
+				}
+				inputList.add(input);
+			}
+		} else {
+			Input input = new Input();
+			value = getAlias(selector.variable,value);
+			input.map.put("variable",selector.variable);
+			input.map.put("value",value);
+			input.map.put("statistic",selector.statistic);
+			input.map.put("units",selector.units);
+			inputList.add(input);
+		}
+		return inputList;
 	}
 	
 	public static String getAlias(String variable, String key) {
