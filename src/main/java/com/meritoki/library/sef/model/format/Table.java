@@ -24,14 +24,14 @@ public class Table {
 	@JsonIgnore
 	public String getStartDate() {
 		Data data = dataList.get(0);
-		return ((data.year!=null)?Integer.toString(data.year):"")+((data.month!=null)?Integer.toString(data.month):"")+((data.day!=null)?Integer.toString(data.day):"");
+		return ((data.year!=null)?Integer.toString(data.year):"")+((data.month!=null)?String.format("%02d", data.month):"")+((data.day!=null)?String.format("%02d", data.day):"");
 	}
 	
 	@JsonIgnore
 	public String getEndDate() {
 		int size = dataList.size();
 		Data data = dataList.get(size-1);
-		return ((data.year!=null)?Integer.toString(data.year):"")+((data.month!=null)?Integer.toString(data.month):"")+((data.day!=null)?Integer.toString(data.day):"");
+		return ((data.year!=null)?Integer.toString(data.year):"")+((data.month!=null)?String.format("%02d", data.month):"")+((data.day!=null)?String.format("%02d", data.day):"");
 	}
 	
 	@JsonIgnore
