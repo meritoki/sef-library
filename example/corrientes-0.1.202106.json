@@ -1,0 +1,6682 @@
+{
+  "outputPath": "./data/corrientes",
+  "sef": "1.0.0",
+  "exclude" : ["-"],
+  "source": {
+    "name": "UTN_ACRE",
+    "code": "C3S_Argentina",
+    "link": "NA"
+  },
+    "solar":{
+    "longitude": -58.8306
+  },
+  "station": {
+    "name": "Corrientes",
+    "id": "Corrientes",
+    "code": "Corrientes",
+    "latitude": -27.471,
+    "longitude": -58.840,
+    "altitude": 52
+  },
+  "meta": {
+    "key": "value"
+  },
+  "alias": {
+    "dd": {
+      "N": "0",
+      "NE": "45",
+      "E": "90",
+      "SE": "135",
+      "S": "180",
+      "SW": "225",
+      "W": "270",
+      "NW": "315"
+    }
+  },
+  "excels": [
+    {
+      "fileName": "/home/jorodriguez/Drive/UTN/Documents/UTN/File/Data/Volume/Corrientes/OMA ANAL TOMO II CORRIENTES - 1873.xlsx",
+      "spreadSheets": [
+        {
+          "index": 1,
+          "attribute": {
+            "key": "value",
+            "month": "4",
+            "year": "1873"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "attribute": {
+            "key": "value",
+            "month": "5",
+            "year": "1873"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 3,
+          "attribute": {
+            "key": "value",
+            "month": "6",
+            "year": "1873"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 4,
+          "attribute": {
+            "key": "value",
+            "month": "7",
+            "year": "1873"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 5,
+          "attribute": {
+            "key": "value",
+            "month": "8",
+            "year": "1873"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 6,
+          "attribute": {
+            "key": "value",
+            "month": "9",
+            "year": "1873"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 7,
+          "attribute": {
+            "key": "value",
+            "month": "10",
+            "year": "1873"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 8,
+          "attribute": {
+            "key": "value",
+            "month": "11",
+            "year": "1873"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "fileName": "/home/jorodriguez/Drive/UTN/Documents/UTN/File/Data/Volume/Corrientes/OMA ANAL TOMO II CORRIENTES - 1874.xlsx",
+      "spreadSheets": [
+        {
+          "index": 1,
+          "attribute": {
+            "key": "value",
+            "month": "6",
+            "year": "1874"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "attribute": {
+            "key": "value",
+            "month": "9",
+            "year": "1874"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 3,
+          "attribute": {
+            "key": "value",
+            "month": "10",
+            "year": "1874"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 4,
+          "attribute": {
+            "key": "value",
+            "month": "11",
+            "year": "1874"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 5,
+          "attribute": {
+            "key": "value",
+            "month": "12",
+            "year": "1874"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "fileName": "/home/jorodriguez/Drive/UTN/Documents/UTN/File/Data/Volume/Corrientes/OMA ANAL TOMO II CORRIENTES - 1875.xlsx",
+      "spreadSheets": [
+        {
+          "index": 1,
+          "attribute": {
+            "key": "value",
+            "month": "2",
+            "year": "1875"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-43:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-43:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-43:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-43:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "attribute": {
+            "key": "value",
+            "month": "3",
+            "year": "1875"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 3,
+          "attribute": {
+            "key": "value",
+            "month": "4",
+            "year": "1875"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 4,
+          "attribute": {
+            "key": "value",
+            "month": "5",
+            "year": "1875"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 5,
+          "attribute": {
+            "key": "value",
+            "month": "6",
+            "year": "1875"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 6,
+          "attribute": {
+            "key": "value",
+            "month": "7",
+            "year": "1875"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 7,
+          "attribute": {
+            "key": "value",
+            "month": "8",
+            "year": "1875"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 8,
+          "attribute": {
+            "key": "value",
+            "month": "9",
+            "year": "1875"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 9,
+          "attribute": {
+            "key": "value",
+            "month": "10",
+            "year": "1875"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 10,
+          "attribute": {
+            "key": "value",
+            "month": "11",
+            "year": "1875"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 10,
+          "attribute": {
+            "key": "value",
+            "month": "12",
+            "year": "1875"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "fileName": "/home/jorodriguez/Drive/UTN/Documents/UTN/File/Data/Volume/Corrientes/OMA ANAL TOMO II CORRIENTES - 1876.xlsx",
+      "spreadSheets": [
+        {
+          "index": 1,
+          "attribute": {
+            "key": "value",
+            "month": "1",
+            "year": "1876"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "attribute": {
+            "key": "value",
+            "month": "2",
+            "year": "1876"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 3,
+          "attribute": {
+            "key": "value",
+            "month": "3",
+            "year": "1876"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 4,
+          "attribute": {
+            "key": "value",
+            "month": "4",
+            "year": "1876"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 5,
+          "attribute": {
+            "key": "value",
+            "month": "5",
+            "year": "1876"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 6,
+          "attribute": {
+            "key": "value",
+            "month": "6",
+            "year": "1876"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 7,
+          "attribute": {
+            "key": "value",
+            "month": "7",
+            "year": "1876"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 8,
+          "attribute": {
+            "key": "value",
+            "month": "8",
+            "year": "1876"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 9,
+          "attribute": {
+            "key": "value",
+            "month": "9",
+            "year": "1876"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 10,
+          "attribute": {
+            "key": "value",
+            "month": "10",
+            "year": "1876"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 10,
+          "attribute": {
+            "key": "value",
+            "month": "10",
+            "year": "1876"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 11,
+          "attribute": {
+            "key": "value",
+            "month": "11",
+            "year": "1876"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 12,
+          "attribute": {
+            "key": "value",
+            "month": "12",
+            "year": "1876"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "fileName": "/home/jorodriguez/Drive/UTN/Documents/UTN/File/Data/Volume/Corrientes/OMA ANAL TOMO II CORRIENTES - 1877.xlsx",
+      "spreadSheets": [
+        {
+          "index": 1,
+          "attribute": {
+            "key": "value",
+            "month": "1",
+            "year": "1877"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "attribute": {
+            "key": "value",
+            "month": "2",
+            "year": "1877"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-43:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-43:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-43:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-43:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 3,
+          "attribute": {
+            "key": "value",
+            "month": "3",
+            "year": "1877"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 4,
+          "attribute": {
+            "key": "value",
+            "month": "4",
+            "year": "1877"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 5,
+          "attribute": {
+            "key": "value",
+            "month": "5",
+            "year": "1877"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 6,
+          "attribute": {
+            "key": "value",
+            "month": "6",
+            "year": "1877"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 7,
+          "attribute": {
+            "key": "value",
+            "month": "7",
+            "year": "1877"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 8,
+          "attribute": {
+            "key": "value",
+            "month": "8",
+            "year": "1877"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 9,
+          "attribute": {
+            "key": "value",
+            "month": "9",
+            "year": "1877"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 10,
+          "attribute": {
+            "key": "value",
+            "month": "10",
+            "year": "1877"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 10,
+          "attribute": {
+            "key": "value",
+            "month": "10",
+            "year": "1877"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 11,
+          "attribute": {
+            "key": "value",
+            "month": "11",
+            "year": "1877"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 12,
+          "attribute": {
+            "key": "value",
+            "month": "12",
+            "year": "1877"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "fileName": "/home/jorodriguez/Drive/UTN/Documents/UTN/File/Data/Volume/Corrientes/OMA ANAL TOMO II CORRIENTES - 1878.xlsx",
+      "spreadSheets": [
+        {
+          "index": 1,
+          "attribute": {
+            "key": "value",
+            "month": "1",
+            "year": "1878"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "attribute": {
+            "key": "value",
+            "month": "2",
+            "year": "1878"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-43:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-43:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-43:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-43:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 3,
+          "attribute": {
+            "key": "value",
+            "month": "3",
+            "year": "1878"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 4,
+          "attribute": {
+            "key": "value",
+            "month": "4",
+            "year": "1878"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 5,
+          "attribute": {
+            "key": "value",
+            "month": "5",
+            "year": "1878"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 6,
+          "attribute": {
+            "key": "value",
+            "month": "6",
+            "year": "1878"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 7,
+          "attribute": {
+            "key": "value",
+            "month": "7",
+            "year": "1878"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 8,
+          "attribute": {
+            "key": "value",
+            "month": "8",
+            "year": "1878"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 9,
+          "attribute": {
+            "key": "value",
+            "month": "9",
+            "year": "1878"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 10,
+          "attribute": {
+            "key": "value",
+            "month": "10",
+            "year": "1878"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 10,
+          "attribute": {
+            "key": "value",
+            "month": "10",
+            "year": "1878"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 11,
+          "attribute": {
+            "key": "value",
+            "month": "11",
+            "year": "1878"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 12,
+          "attribute": {
+            "key": "value",
+            "month": "12",
+            "year": "1878"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "fileName": "/home/jorodriguez/Drive/UTN/Documents/UTN/File/Data/Volume/Corrientes/OMA ANAL TOMO II CORRIENTES - 1879.xlsx",
+      "spreadSheets": [
+        {
+          "index": 1,
+          "attribute": {
+            "key": "value",
+            "month": "1",
+            "year": "1879"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "attribute": {
+            "key": "value",
+            "month": "2",
+            "year": "1879"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-43:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-43:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-43:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-43:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 3,
+          "attribute": {
+            "key": "value",
+            "month": "3",
+            "year": "1879"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 4,
+          "attribute": {
+            "key": "value",
+            "month": "4",
+            "year": "1879"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 5,
+          "attribute": {
+            "key": "value",
+            "month": "5",
+            "year": "1879"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 6,
+          "attribute": {
+            "key": "value",
+            "month": "6",
+            "year": "1879"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 7,
+          "attribute": {
+            "key": "value",
+            "month": "7",
+            "year": "1879"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 8,
+          "attribute": {
+            "key": "value",
+            "month": "8",
+            "year": "1879"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 9,
+          "attribute": {
+            "key": "value",
+            "month": "9",
+            "year": "1879"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 10,
+          "attribute": {
+            "key": "value",
+            "month": "10",
+            "year": "1879"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 10,
+          "attribute": {
+            "key": "value",
+            "month": "10",
+            "year": "1879"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 11,
+          "attribute": {
+            "key": "value",
+            "month": "11",
+            "year": "1879"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 12,
+          "attribute": {
+            "key": "value",
+            "month": "12",
+            "year": "1879"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "fileName": "/home/jorodriguez/Drive/UTN/Documents/UTN/File/Data/Volume/Corrientes/OMA ANAL TOMO II CORRIENTES - 1880.xlsx",
+      "spreadSheets": [
+        {
+          "index": 1,
+          "attribute": {
+            "key": "value",
+            "month": "1",
+            "year": "1880"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "attribute": {
+            "key": "value",
+            "month": "2",
+            "year": "1880"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 3,
+          "attribute": {
+            "key": "value",
+            "month": "3",
+            "year": "1880"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 4,
+          "attribute": {
+            "key": "value",
+            "month": "4",
+            "year": "1880"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 5,
+          "attribute": {
+            "key": "value",
+            "month": "5",
+            "year": "1880"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 6,
+          "attribute": {
+            "key": "value",
+            "month": "6",
+            "year": "1880"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 7,
+          "attribute": {
+            "key": "value",
+            "month": "7",
+            "year": "1880"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 8,
+          "attribute": {
+            "key": "value",
+            "month": "8",
+            "year": "1880"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 9,
+          "attribute": {
+            "key": "value",
+            "month": "9",
+            "year": "1880"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 10,
+          "attribute": {
+            "key": "value",
+            "month": "10",
+            "year": "1880"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 10,
+          "attribute": {
+            "key": "value",
+            "month": "10",
+            "year": "1880"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 11,
+          "attribute": {
+            "key": "value",
+            "month": "11",
+            "year": "1880"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 12,
+          "attribute": {
+            "key": "value",
+            "month": "12",
+            "year": "1880"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "fileName": "/home/jorodriguez/Drive/UTN/Documents/UTN/File/Data/Volume/Corrientes/OMA ANAL TOMO II CORRIENTES - 1881.xlsx",
+      "spreadSheets": [
+        {
+          "index": 1,
+          "attribute": {
+            "key": "value",
+            "month": "1",
+            "year": "1881"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "attribute": {
+            "key": "value",
+            "month": "2",
+            "year": "1881"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-43:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-43:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-43:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-43:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 3,
+          "attribute": {
+            "key": "value",
+            "month": "3",
+            "year": "1881"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 4,
+          "attribute": {
+            "key": "value",
+            "month": "4",
+            "year": "1881"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 5,
+          "attribute": {
+            "key": "value",
+            "month": "5",
+            "year": "1881"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 6,
+          "attribute": {
+            "key": "value",
+            "month": "6",
+            "year": "1881"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 7,
+          "attribute": {
+            "key": "value",
+            "month": "7",
+            "year": "1881"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 8,
+          "attribute": {
+            "key": "value",
+            "month": "8",
+            "year": "1881"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 9,
+          "attribute": {
+            "key": "value",
+            "month": "9",
+            "year": "1881"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 10,
+          "attribute": {
+            "key": "value",
+            "month": "10",
+            "year": "1881"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 10,
+          "attribute": {
+            "key": "value",
+            "month": "10",
+            "year": "1881"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 11,
+          "attribute": {
+            "key": "value",
+            "month": "11",
+            "year": "1881"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 12,
+          "attribute": {
+            "key": "value",
+            "month": "12",
+            "year": "1881"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "fileName": "/home/jorodriguez/Drive/UTN/Documents/UTN/File/Data/Volume/Corrientes/OMA ANAL TOMO II CORRIENTES - 1882.xlsx",
+      "spreadSheets": [
+        {
+          "index": 1,
+          "attribute": {
+            "key": "value",
+            "month": "1",
+            "year": "1882"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "attribute": {
+            "key": "value",
+            "month": "2",
+            "year": "1882"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-43:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-43:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-43:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-43:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 3,
+          "attribute": {
+            "key": "value",
+            "month": "3",
+            "year": "1882"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 4,
+          "attribute": {
+            "key": "value",
+            "month": "4",
+            "year": "1882"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 5,
+          "attribute": {
+            "key": "value",
+            "month": "5",
+            "year": "1882"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 6,
+          "attribute": {
+            "key": "value",
+            "month": "6",
+            "year": "1882"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 7,
+          "attribute": {
+            "key": "value",
+            "month": "7",
+            "year": "1882"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 8,
+          "attribute": {
+            "key": "value",
+            "month": "8",
+            "year": "1882"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 9,
+          "attribute": {
+            "key": "value",
+            "month": "9",
+            "year": "1882"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 10,
+          "attribute": {
+            "key": "value",
+            "month": "10",
+            "year": "1882"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 10,
+          "attribute": {
+            "key": "value",
+            "month": "10",
+            "year": "1882"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 11,
+          "attribute": {
+            "key": "value",
+            "month": "11",
+            "year": "1882"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 12,
+          "attribute": {
+            "key": "value",
+            "month": "12",
+            "year": "1882"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "fileName": "/home/jorodriguez/Drive/UTN/Documents/UTN/File/Data/Volume/Corrientes/OMA ANAL TOMO II CORRIENTES - 1883.xlsx",
+      "spreadSheets": [
+        {
+          "index": 1,
+          "attribute": {
+            "key": "value",
+            "month": "1",
+            "year": "1883"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "attribute": {
+            "key": "value",
+            "month": "2",
+            "year": "1883"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-43:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-43:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-43:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-43:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 3,
+          "attribute": {
+            "key": "value",
+            "month": "3",
+            "year": "1883"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 4,
+          "attribute": {
+            "key": "value",
+            "month": "4",
+            "year": "1883"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 5,
+          "attribute": {
+            "key": "value",
+            "month": "5",
+            "year": "1883"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 6,
+          "attribute": {
+            "key": "value",
+            "month": "6",
+            "year": "1883"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 7,
+          "attribute": {
+            "key": "value",
+            "month": "7",
+            "year": "1883"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 8,
+          "attribute": {
+            "key": "value",
+            "month": "8",
+            "year": "1883"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 9,
+          "attribute": {
+            "key": "value",
+            "month": "9",
+            "year": "1883"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 10,
+          "attribute": {
+            "key": "value",
+            "month": "10",
+            "year": "1883"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 10,
+          "attribute": {
+            "key": "value",
+            "month": "10",
+            "year": "1883"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 11,
+          "attribute": {
+            "key": "value",
+            "month": "11",
+            "year": "1883"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 12,
+          "attribute": {
+            "key": "value",
+            "month": "12",
+            "year": "1883"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "fileName": "/home/jorodriguez/Drive/UTN/Documents/UTN/File/Data/Volume/Corrientes/OMA ANAL TOMO II CORRIENTES - 1884.xlsx",
+      "spreadSheets": [
+        {
+          "index": 1,
+          "attribute": {
+            "key": "value",
+            "month": "1",
+            "year": "1884"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "attribute": {
+            "key": "value",
+            "month": "2",
+            "year": "1884"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 3,
+          "attribute": {
+            "key": "value",
+            "month": "3",
+            "year": "1884"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 4,
+          "attribute": {
+            "key": "value",
+            "month": "4",
+            "year": "1884"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 5,
+          "attribute": {
+            "key": "value",
+            "month": "5",
+            "year": "1884"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 6,
+          "attribute": {
+            "key": "value",
+            "month": "6",
+            "year": "1884"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 7,
+          "attribute": {
+            "key": "value",
+            "month": "7",
+            "year": "1884"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 8,
+          "attribute": {
+            "key": "value",
+            "month": "8",
+            "year": "1884"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 9,
+          "attribute": {
+            "key": "value",
+            "month": "9",
+            "year": "1884"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 10,
+          "attribute": {
+            "key": "value",
+            "month": "10",
+            "year": "1884"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 10,
+          "attribute": {
+            "key": "value",
+            "month": "10",
+            "year": "1884"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 11,
+          "attribute": {
+            "key": "value",
+            "month": "11",
+            "year": "1884"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 12,
+          "attribute": {
+            "key": "value",
+            "month": "12",
+            "year": "1884"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "fileName": "/home/jorodriguez/Drive/UTN/Documents/UTN/File/Data/Volume/Corrientes/OMA ANAL TOMO II CORRIENTES - 1885.xlsx",
+      "spreadSheets": [
+        {
+          "index": 1,
+          "attribute": {
+            "key": "value",
+            "month": "1",
+            "year": "1885"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "attribute": {
+            "key": "value",
+            "month": "2",
+            "year": "1885"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 3,
+          "attribute": {
+            "key": "value",
+            "month": "3",
+            "year": "1885"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 4,
+          "attribute": {
+            "key": "value",
+            "month": "4",
+            "year": "1885"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 5,
+          "attribute": {
+            "key": "value",
+            "month": "5",
+            "year": "1885"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 6,
+          "attribute": {
+            "key": "value",
+            "month": "6",
+            "year": "1885"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 7,
+          "attribute": {
+            "key": "value",
+            "month": "7",
+            "year": "1885"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 8,
+          "attribute": {
+            "key": "value",
+            "month": "8",
+            "year": "1885"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 9,
+          "attribute": {
+            "key": "value",
+            "month": "9",
+            "year": "1885"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 10,
+          "attribute": {
+            "key": "value",
+            "month": "10",
+            "year": "1885"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 10,
+          "attribute": {
+            "key": "value",
+            "month": "10",
+            "year": "1885"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        },
+        {
+          "index": 11,
+          "attribute": {
+            "key": "value",
+            "month": "11",
+            "year": "1885"
+          },
+          "selectors": [
+            {
+              "variable": "time",
+              "value": "4-13,22-29,36-45:1",
+              "statistic": "point",
+              "units": "day"
+            },
+            {
+              "variable": "p",
+              "value": "4-13,22-29,36-45:2",
+              "statistic": "point",
+              "units": "mm Hg",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "ta",
+              "value": "4-13,22-29,36-45:3",
+              "statistic": "point",
+              "units": "C",
+              "delimeter": null,
+              "hour": null,
+              "minute": null
+            },
+            {
+              "variable": "dd",
+              "value": "4-13,22-29,36-45:8",
+              "statistic": "point",
+              "units": "deg",
+              "delimeter": "\\.",
+              "hour": "7,14,21",
+              "minute": "0,0,0"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
