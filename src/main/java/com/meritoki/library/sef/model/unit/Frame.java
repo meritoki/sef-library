@@ -85,6 +85,7 @@ public class Frame {
 				data.value = input.map.get("value");
 				data.units = input.map.get("units");
 				data.statistic = input.map.get("statistic");
+				data.meta = input.map.get("meta");
 				List<Data> dataList = this.dataMap.get(data.variable);
 				if(dataList == null) {
 					dataList = new ArrayList<>();

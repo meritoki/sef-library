@@ -1,10 +1,14 @@
 {
   "outputPath": "./data/corrientes",
   "sef": "1.0.0",
+  "exclude" : ["-"],
   "source": {
     "name": "UTN_ACRE",
     "code": "C3S_Argentina",
     "link": "NA"
+  },
+    "solar":{
+    "longitude": -58.8306
   },
   "station": {
     "name": "Corrientes",
@@ -71,7 +75,7 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -114,7 +118,7 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -157,7 +161,7 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -200,7 +204,7 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -243,7 +247,7 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -286,7 +290,7 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -329,7 +333,7 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -372,7 +376,7 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -386,221 +390,6 @@
           "index": 1,
           "attribute": {
             "key": "value",
-            "month": "1",
-            "year": "1873"
-          },
-          "selectors": [
-            {
-              "variable": "time",
-              "value": "4-13,22-29,36-45:1",
-              "statistic": "point",
-              "units": "day"
-            },
-            {
-              "variable": "p",
-              "value": "4-13,22-29,36-45:2",
-              "statistic": "point",
-              "units": "mm Hg",
-              "delimeter": null,
-              "hour": null,
-              "minute": null
-            },
-            {
-              "variable": "ta",
-              "value": "4-13,22-29,36-45:3",
-              "statistic": "point",
-              "units": "C",
-              "delimeter": null,
-              "hour": null,
-              "minute": null
-            },
-            {
-              "variable": "dd",
-              "value": "4-13,22-29,36-45:8",
-              "statistic": "point",
-              "units": "deg",
-              "delimeter": "\\.",
-              "hour": "6,12,18",
-              "minute": "0,0,0"
-            }
-          ]
-        },
-        {
-          "index": 2,
-          "attribute": {
-            "key": "value",
-            "month": "2",
-            "year": "1874"
-          },
-          "selectors": [
-            {
-              "variable": "time",
-              "value": "4-13,22-29,36-45:1",
-              "statistic": "point",
-              "units": "day"
-            },
-            {
-              "variable": "p",
-              "value": "4-13,22-29,36-45:2",
-              "statistic": "point",
-              "units": "mm Hg",
-              "delimeter": null,
-              "hour": null,
-              "minute": null
-            },
-            {
-              "variable": "ta",
-              "value": "4-13,22-29,36-45:3",
-              "statistic": "point",
-              "units": "C",
-              "delimeter": null,
-              "hour": null,
-              "minute": null
-            },
-            {
-              "variable": "dd",
-              "value": "4-13,22-29,36-45:8",
-              "statistic": "point",
-              "units": "deg",
-              "delimeter": "\\.",
-              "hour": "6,12,18",
-              "minute": "0,0,0"
-            }
-          ]
-        },
-        {
-          "index": 3,
-          "attribute": {
-            "key": "value",
-            "month": "3",
-            "year": "1874"
-          },
-          "selectors": [
-            {
-              "variable": "time",
-              "value": "4-13,22-29,36-45:1",
-              "statistic": "point",
-              "units": "day"
-            },
-            {
-              "variable": "p",
-              "value": "4-13,22-29,36-45:2",
-              "statistic": "point",
-              "units": "mm Hg",
-              "delimeter": null,
-              "hour": null,
-              "minute": null
-            },
-            {
-              "variable": "ta",
-              "value": "4-13,22-29,36-45:3",
-              "statistic": "point",
-              "units": "C",
-              "delimeter": null,
-              "hour": null,
-              "minute": null
-            },
-            {
-              "variable": "dd",
-              "value": "4-13,22-29,36-45:8",
-              "statistic": "point",
-              "units": "deg",
-              "delimeter": "\\.",
-              "hour": "6,12,18",
-              "minute": "0,0,0"
-            }
-          ]
-        },
-        {
-          "index": 4,
-          "attribute": {
-            "key": "value",
-            "month": "4",
-            "year": "1874"
-          },
-          "selectors": [
-            {
-              "variable": "time",
-              "value": "4-13,22-29,36-45:1",
-              "statistic": "point",
-              "units": "day"
-            },
-            {
-              "variable": "p",
-              "value": "4-13,22-29,36-45:2",
-              "statistic": "point",
-              "units": "mm Hg",
-              "delimeter": null,
-              "hour": null,
-              "minute": null
-            },
-            {
-              "variable": "ta",
-              "value": "4-13,22-29,36-45:3",
-              "statistic": "point",
-              "units": "C",
-              "delimeter": null,
-              "hour": null,
-              "minute": null
-            },
-            {
-              "variable": "dd",
-              "value": "4-13,22-29,36-45:8",
-              "statistic": "point",
-              "units": "deg",
-              "delimeter": "\\.",
-              "hour": "6,12,18",
-              "minute": "0,0,0"
-            }
-          ]
-        },
-        {
-          "index": 5,
-          "attribute": {
-            "key": "value",
-            "month": "5",
-            "year": "1874"
-          },
-          "selectors": [
-            {
-              "variable": "time",
-              "value": "4-13,22-29,36-45:1",
-              "statistic": "point",
-              "units": "day"
-            },
-            {
-              "variable": "p",
-              "value": "4-13,22-29,36-45:2",
-              "statistic": "point",
-              "units": "mm Hg",
-              "delimeter": null,
-              "hour": null,
-              "minute": null
-            },
-            {
-              "variable": "ta",
-              "value": "4-13,22-29,36-45:3",
-              "statistic": "point",
-              "units": "C",
-              "delimeter": null,
-              "hour": null,
-              "minute": null
-            },
-            {
-              "variable": "dd",
-              "value": "4-13,22-29,36-45:8",
-              "statistic": "point",
-              "units": "deg",
-              "delimeter": "\\.",
-              "hour": "6,12,18",
-              "minute": "0,0,0"
-            }
-          ]
-        },
-        {
-          "index": 6,
-          "attribute": {
-            "key": "value",
             "month": "6",
             "year": "1874"
           },
@@ -635,99 +424,13 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
         },
         {
-          "index": 7,
-          "attribute": {
-            "key": "value",
-            "month": "7",
-            "year": "1874"
-          },
-          "selectors": [
-            {
-              "variable": "time",
-              "value": "4-13,22-29,36-45:1",
-              "statistic": "point",
-              "units": "day"
-            },
-            {
-              "variable": "p",
-              "value": "4-13,22-29,36-45:2",
-              "statistic": "point",
-              "units": "mm Hg",
-              "delimeter": null,
-              "hour": null,
-              "minute": null
-            },
-            {
-              "variable": "ta",
-              "value": "4-13,22-29,36-45:3",
-              "statistic": "point",
-              "units": "C",
-              "delimeter": null,
-              "hour": null,
-              "minute": null
-            },
-            {
-              "variable": "dd",
-              "value": "4-13,22-29,36-45:8",
-              "statistic": "point",
-              "units": "deg",
-              "delimeter": "\\.",
-              "hour": "6,12,18",
-              "minute": "0,0,0"
-            }
-          ]
-        },
-        {
-          "index": 8,
-          "attribute": {
-            "key": "value",
-            "month": "8",
-            "year": "1874"
-          },
-          "selectors": [
-            {
-              "variable": "time",
-              "value": "4-13,22-29,36-45:1",
-              "statistic": "point",
-              "units": "day"
-            },
-            {
-              "variable": "p",
-              "value": "4-13,22-29,36-45:2",
-              "statistic": "point",
-              "units": "mm Hg",
-              "delimeter": null,
-              "hour": null,
-              "minute": null
-            },
-            {
-              "variable": "ta",
-              "value": "4-13,22-29,36-45:3",
-              "statistic": "point",
-              "units": "C",
-              "delimeter": null,
-              "hour": null,
-              "minute": null
-            },
-            {
-              "variable": "dd",
-              "value": "4-13,22-29,36-45:8",
-              "statistic": "point",
-              "units": "deg",
-              "delimeter": "\\.",
-              "hour": "6,12,18",
-              "minute": "0,0,0"
-            }
-          ]
-        },
-        {
-          "index": 9,
+          "index": 2,
           "attribute": {
             "key": "value",
             "month": "9",
@@ -764,13 +467,13 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
         },
         {
-          "index": 10,
+          "index": 3,
           "attribute": {
             "key": "value",
             "month": "10",
@@ -807,56 +510,13 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
         },
         {
-          "index": 10,
-          "attribute": {
-            "key": "value",
-            "month": "10",
-            "year": "1874"
-          },
-          "selectors": [
-            {
-              "variable": "time",
-              "value": "4-13,22-29,36-45:1",
-              "statistic": "point",
-              "units": "day"
-            },
-            {
-              "variable": "p",
-              "value": "4-13,22-29,36-45:2",
-              "statistic": "point",
-              "units": "mm Hg",
-              "delimeter": null,
-              "hour": null,
-              "minute": null
-            },
-            {
-              "variable": "ta",
-              "value": "4-13,22-29,36-45:3",
-              "statistic": "point",
-              "units": "C",
-              "delimeter": null,
-              "hour": null,
-              "minute": null
-            },
-            {
-              "variable": "dd",
-              "value": "4-13,22-29,36-45:8",
-              "statistic": "point",
-              "units": "deg",
-              "delimeter": "\\.",
-              "hour": "6,12,18",
-              "minute": "0,0,0"
-            }
-          ]
-        },
-        {
-          "index": 11,
+          "index": 4,
           "attribute": {
             "key": "value",
             "month": "11",
@@ -893,17 +553,17 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
         },
         {
-          "index": 12,
+          "index": 5,
           "attribute": {
             "key": "value",
             "month": "12",
-            "year": "1873"
+            "year": "1874"
           },
           "selectors": [
             {
@@ -936,7 +596,7 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -950,62 +610,19 @@
           "index": 1,
           "attribute": {
             "key": "value",
-            "month": "1",
-            "year": "1875"
-          },
-          "selectors": [
-            {
-              "variable": "time",
-              "value": "4-13,22-29,36-45:1",
-              "statistic": "point",
-              "units": "day"
-            },
-            {
-              "variable": "p",
-              "value": "4-13,22-29,36-45:2",
-              "statistic": "point",
-              "units": "mm Hg",
-              "delimeter": null,
-              "hour": null,
-              "minute": null
-            },
-            {
-              "variable": "ta",
-              "value": "4-13,22-29,36-45:3",
-              "statistic": "point",
-              "units": "C",
-              "delimeter": null,
-              "hour": null,
-              "minute": null
-            },
-            {
-              "variable": "dd",
-              "value": "4-13,22-29,36-45:8",
-              "statistic": "point",
-              "units": "deg",
-              "delimeter": "\\.",
-              "hour": "6,12,18",
-              "minute": "0,0,0"
-            }
-          ]
-        },
-        {
-          "index": 2,
-          "attribute": {
-            "key": "value",
             "month": "2",
             "year": "1875"
           },
           "selectors": [
             {
               "variable": "time",
-              "value": "4-13,22-29,36-45:1",
+              "value": "4-13,22-29,36-43:1",
               "statistic": "point",
               "units": "day"
             },
             {
               "variable": "p",
-              "value": "4-13,22-29,36-45:2",
+              "value": "4-13,22-29,36-43:2",
               "statistic": "point",
               "units": "mm Hg",
               "delimeter": null,
@@ -1014,7 +631,7 @@
             },
             {
               "variable": "ta",
-              "value": "4-13,22-29,36-45:3",
+              "value": "4-13,22-29,36-43:3",
               "statistic": "point",
               "units": "C",
               "delimeter": null,
@@ -1023,17 +640,17 @@
             },
             {
               "variable": "dd",
-              "value": "4-13,22-29,36-45:8",
+              "value": "4-13,22-29,36-43:8",
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
         },
         {
-          "index": 3,
+          "index": 2,
           "attribute": {
             "key": "value",
             "month": "3",
@@ -1070,13 +687,13 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
         },
         {
-          "index": 4,
+          "index": 3,
           "attribute": {
             "key": "value",
             "month": "4",
@@ -1113,13 +730,13 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
         },
         {
-          "index": 5,
+          "index": 4,
           "attribute": {
             "key": "value",
             "month": "5",
@@ -1156,13 +773,13 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
         },
         {
-          "index": 6,
+          "index": 5,
           "attribute": {
             "key": "value",
             "month": "6",
@@ -1199,13 +816,13 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
         },
         {
-          "index": 7,
+          "index": 6,
           "attribute": {
             "key": "value",
             "month": "7",
@@ -1242,13 +859,13 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
         },
         {
-          "index": 8,
+          "index": 7,
           "attribute": {
             "key": "value",
             "month": "8",
@@ -1285,13 +902,13 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
         },
         {
-          "index": 9,
+          "index": 8,
           "attribute": {
             "key": "value",
             "month": "9",
@@ -1328,13 +945,13 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
         },
         {
-          "index": 10,
+          "index": 9,
           "attribute": {
             "key": "value",
             "month": "10",
@@ -1371,56 +988,13 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
         },
         {
           "index": 10,
-          "attribute": {
-            "key": "value",
-            "month": "10",
-            "year": "1875"
-          },
-          "selectors": [
-            {
-              "variable": "time",
-              "value": "4-13,22-29,36-45:1",
-              "statistic": "point",
-              "units": "day"
-            },
-            {
-              "variable": "p",
-              "value": "4-13,22-29,36-45:2",
-              "statistic": "point",
-              "units": "mm Hg",
-              "delimeter": null,
-              "hour": null,
-              "minute": null
-            },
-            {
-              "variable": "ta",
-              "value": "4-13,22-29,36-45:3",
-              "statistic": "point",
-              "units": "C",
-              "delimeter": null,
-              "hour": null,
-              "minute": null
-            },
-            {
-              "variable": "dd",
-              "value": "4-13,22-29,36-45:8",
-              "statistic": "point",
-              "units": "deg",
-              "delimeter": "\\.",
-              "hour": "6,12,18",
-              "minute": "0,0,0"
-            }
-          ]
-        },
-        {
-          "index": 11,
           "attribute": {
             "key": "value",
             "month": "11",
@@ -1457,13 +1031,13 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
         },
         {
-          "index": 12,
+          "index": 10,
           "attribute": {
             "key": "value",
             "month": "12",
@@ -1500,7 +1074,7 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -1548,7 +1122,7 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -1591,7 +1165,7 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -1634,7 +1208,7 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -1677,7 +1251,7 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -1720,7 +1294,7 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -1763,7 +1337,7 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -1806,7 +1380,7 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -1849,7 +1423,7 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -1892,7 +1466,7 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -1935,7 +1509,7 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -1978,7 +1552,7 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -2021,7 +1595,7 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -2064,7 +1638,7 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -2112,7 +1686,7 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -2127,13 +1701,13 @@
           "selectors": [
             {
               "variable": "time",
-              "value": "4-13,22-29,36-45:1",
+              "value": "4-13,22-29,36-43:1",
               "statistic": "point",
               "units": "day"
             },
             {
               "variable": "p",
-              "value": "4-13,22-29,36-45:2",
+              "value": "4-13,22-29,36-43:2",
               "statistic": "point",
               "units": "mm Hg",
               "delimeter": null,
@@ -2142,7 +1716,7 @@
             },
             {
               "variable": "ta",
-              "value": "4-13,22-29,36-45:3",
+              "value": "4-13,22-29,36-43:3",
               "statistic": "point",
               "units": "C",
               "delimeter": null,
@@ -2151,11 +1725,11 @@
             },
             {
               "variable": "dd",
-              "value": "4-13,22-29,36-45:8",
+              "value": "4-13,22-29,36-43:8",
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -2198,7 +1772,7 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -2241,7 +1815,7 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -2284,7 +1858,7 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -2327,7 +1901,7 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -2370,7 +1944,7 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -2413,7 +1987,7 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -2456,7 +2030,7 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -2499,7 +2073,7 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -2542,7 +2116,7 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -2585,7 +2159,7 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -2628,7 +2202,7 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -2676,7 +2250,7 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -2691,13 +2265,13 @@
           "selectors": [
             {
               "variable": "time",
-              "value": "4-13,22-29,36-45:1",
+              "value": "4-13,22-29,36-43:1",
               "statistic": "point",
               "units": "day"
             },
             {
               "variable": "p",
-              "value": "4-13,22-29,36-45:2",
+              "value": "4-13,22-29,36-43:2",
               "statistic": "point",
               "units": "mm Hg",
               "delimeter": null,
@@ -2706,7 +2280,7 @@
             },
             {
               "variable": "ta",
-              "value": "4-13,22-29,36-45:3",
+              "value": "4-13,22-29,36-43:3",
               "statistic": "point",
               "units": "C",
               "delimeter": null,
@@ -2715,11 +2289,11 @@
             },
             {
               "variable": "dd",
-              "value": "4-13,22-29,36-45:8",
+              "value": "4-13,22-29,36-43:8",
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -2762,7 +2336,7 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -2805,7 +2379,7 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -2848,7 +2422,7 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -2891,7 +2465,7 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -2934,7 +2508,7 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -2977,7 +2551,7 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -3020,7 +2594,7 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -3063,7 +2637,7 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -3106,7 +2680,7 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -3149,7 +2723,7 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -3192,7 +2766,7 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -3240,7 +2814,7 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -3255,13 +2829,13 @@
           "selectors": [
             {
               "variable": "time",
-              "value": "4-13,22-29,36-45:1",
+              "value": "4-13,22-29,36-43:1",
               "statistic": "point",
               "units": "day"
             },
             {
               "variable": "p",
-              "value": "4-13,22-29,36-45:2",
+              "value": "4-13,22-29,36-43:2",
               "statistic": "point",
               "units": "mm Hg",
               "delimeter": null,
@@ -3270,7 +2844,7 @@
             },
             {
               "variable": "ta",
-              "value": "4-13,22-29,36-45:3",
+              "value": "4-13,22-29,36-43:3",
               "statistic": "point",
               "units": "C",
               "delimeter": null,
@@ -3279,11 +2853,11 @@
             },
             {
               "variable": "dd",
-              "value": "4-13,22-29,36-45:8",
+              "value": "4-13,22-29,36-43:8",
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -3326,7 +2900,7 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -3369,7 +2943,7 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -3412,7 +2986,7 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -3455,7 +3029,7 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -3498,7 +3072,7 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -3541,7 +3115,7 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -3584,7 +3158,7 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -3627,7 +3201,7 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -3670,7 +3244,7 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -3713,7 +3287,7 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -3756,7 +3330,7 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -3804,7 +3378,7 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -3847,7 +3421,7 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -3890,7 +3464,7 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -3933,7 +3507,7 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -3976,7 +3550,7 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -4019,7 +3593,7 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -4062,7 +3636,7 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -4105,7 +3679,7 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -4148,7 +3722,7 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -4191,7 +3765,7 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -4234,7 +3808,7 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -4277,7 +3851,7 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -4320,7 +3894,7 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -4368,7 +3942,7 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -4383,13 +3957,13 @@
           "selectors": [
             {
               "variable": "time",
-              "value": "4-13,22-29,36-45:1",
+              "value": "4-13,22-29,36-43:1",
               "statistic": "point",
               "units": "day"
             },
             {
               "variable": "p",
-              "value": "4-13,22-29,36-45:2",
+              "value": "4-13,22-29,36-43:2",
               "statistic": "point",
               "units": "mm Hg",
               "delimeter": null,
@@ -4398,7 +3972,7 @@
             },
             {
               "variable": "ta",
-              "value": "4-13,22-29,36-45:3",
+              "value": "4-13,22-29,36-43:3",
               "statistic": "point",
               "units": "C",
               "delimeter": null,
@@ -4407,11 +3981,11 @@
             },
             {
               "variable": "dd",
-              "value": "4-13,22-29,36-45:8",
+              "value": "4-13,22-29,36-43:8",
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -4454,7 +4028,7 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -4497,7 +4071,7 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -4540,7 +4114,7 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -4583,7 +4157,7 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -4626,7 +4200,7 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -4669,7 +4243,7 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -4712,7 +4286,7 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -4755,7 +4329,7 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -4798,7 +4372,7 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -4841,7 +4415,7 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -4884,7 +4458,7 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -4932,7 +4506,7 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -4947,13 +4521,13 @@
           "selectors": [
             {
               "variable": "time",
-              "value": "4-13,22-29,36-45:1",
+              "value": "4-13,22-29,36-43:1",
               "statistic": "point",
               "units": "day"
             },
             {
               "variable": "p",
-              "value": "4-13,22-29,36-45:2",
+              "value": "4-13,22-29,36-43:2",
               "statistic": "point",
               "units": "mm Hg",
               "delimeter": null,
@@ -4962,7 +4536,7 @@
             },
             {
               "variable": "ta",
-              "value": "4-13,22-29,36-45:3",
+              "value": "4-13,22-29,36-43:3",
               "statistic": "point",
               "units": "C",
               "delimeter": null,
@@ -4971,11 +4545,11 @@
             },
             {
               "variable": "dd",
-              "value": "4-13,22-29,36-45:8",
+              "value": "4-13,22-29,36-43:8",
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -5018,7 +4592,7 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -5061,7 +4635,7 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -5104,7 +4678,7 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -5147,7 +4721,7 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -5190,7 +4764,7 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -5233,7 +4807,7 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -5276,7 +4850,7 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -5319,7 +4893,7 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -5362,7 +4936,7 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -5405,7 +4979,7 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -5448,7 +5022,7 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -5496,7 +5070,7 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -5511,13 +5085,13 @@
           "selectors": [
             {
               "variable": "time",
-              "value": "4-13,22-29,36-45:1",
+              "value": "4-13,22-29,36-43:1",
               "statistic": "point",
               "units": "day"
             },
             {
               "variable": "p",
-              "value": "4-13,22-29,36-45:2",
+              "value": "4-13,22-29,36-43:2",
               "statistic": "point",
               "units": "mm Hg",
               "delimeter": null,
@@ -5526,7 +5100,7 @@
             },
             {
               "variable": "ta",
-              "value": "4-13,22-29,36-45:3",
+              "value": "4-13,22-29,36-43:3",
               "statistic": "point",
               "units": "C",
               "delimeter": null,
@@ -5535,11 +5109,11 @@
             },
             {
               "variable": "dd",
-              "value": "4-13,22-29,36-45:8",
+              "value": "4-13,22-29,36-43:8",
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -5582,7 +5156,7 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -5625,7 +5199,7 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -5668,7 +5242,7 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -5711,7 +5285,7 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -5754,7 +5328,7 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -5797,7 +5371,7 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -5840,7 +5414,7 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -5883,7 +5457,7 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -5926,7 +5500,7 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -5969,7 +5543,7 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -6012,7 +5586,7 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -6060,7 +5634,7 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -6103,7 +5677,7 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -6146,7 +5720,7 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -6189,7 +5763,7 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -6232,7 +5806,7 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -6275,7 +5849,7 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -6318,7 +5892,7 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -6361,7 +5935,7 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -6404,7 +5978,7 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -6447,7 +6021,7 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -6490,7 +6064,7 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -6533,7 +6107,7 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -6576,7 +6150,7 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -6624,7 +6198,7 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -6667,7 +6241,7 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -6710,7 +6284,7 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -6753,7 +6327,7 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -6796,7 +6370,7 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -6839,7 +6413,7 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -6882,7 +6456,7 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -6925,7 +6499,7 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -6968,7 +6542,7 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -7011,7 +6585,7 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -7054,7 +6628,7 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]
@@ -7097,50 +6671,7 @@
               "statistic": "point",
               "units": "deg",
               "delimeter": "\\.",
-              "hour": "6,12,18",
-              "minute": "0,0,0"
-            }
-          ]
-        },
-        {
-          "index": 12,
-          "attribute": {
-            "key": "value",
-            "month": "12",
-            "year": "1885"
-          },
-          "selectors": [
-            {
-              "variable": "time",
-              "value": "4-13,22-29,36-45:1",
-              "statistic": "point",
-              "units": "day"
-            },
-            {
-              "variable": "p",
-              "value": "4-13,22-29,36-45:2",
-              "statistic": "point",
-              "units": "mm Hg",
-              "delimeter": null,
-              "hour": null,
-              "minute": null
-            },
-            {
-              "variable": "ta",
-              "value": "4-13,22-29,36-45:3",
-              "statistic": "point",
-              "units": "C",
-              "delimeter": null,
-              "hour": null,
-              "minute": null
-            },
-            {
-              "variable": "dd",
-              "value": "4-13,22-29,36-45:8",
-              "statistic": "point",
-              "units": "deg",
-              "delimeter": "\\.",
-              "hour": "6,12,18",
+              "hour": "7,14,21",
               "minute": "0,0,0"
             }
           ]

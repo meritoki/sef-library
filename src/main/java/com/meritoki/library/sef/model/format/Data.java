@@ -1,5 +1,10 @@
 package com.meritoki.library.sef.model.format;
 
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+
+import com.meritoki.library.sef.model.unit.Solar;
+
 public class Data {
 	
 	public Integer year;
@@ -12,7 +17,7 @@ public class Data {
 	public String variable;
 	public String units;
 	public String statistic;
-	public Integer meta;
+	public String meta;
 	
 	public static String getHeaderString() {
 		StringBuilder stringBuilder = new StringBuilder();
@@ -32,6 +37,39 @@ public class Data {
 		stringBuilder.append("\t");
 		stringBuilder.append("Meta");
 		return stringBuilder.toString();
+	}
+	
+	public void applySolar(Solar solar) {
+		//UTC=localtime-(longitude/15);
+		if(this.hour != null) {
+			SimpleDateFormat format = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
+			Calendar calendar = Calendar.getInstance();
+			calendar.set(Calendar.YEAR,year);
+			calendar.set(Calendar.MONTH,month-1);
+			calendar.set(Calendar.DATE,day);
+			calendar.set(Calendar.HOUR,hour);
+			calendar.set(Calendar.MINUTE,(minute != null)?minute:0);
+			calendar.set(Calendar.SECOND,0);
+			this.meta = ((this.meta.isEmpty())?"":this.meta+",")+"orig.time="+format.format(calendar.getTime());
+			calendar.add(Calendar.HOUR, -(int)(solar.longitude/15));
+			this.year = calendar.get(Calendar.YEAR);
+			this.month = calendar.get(Calendar.MONTH)+1;
+			this.day = calendar.get(Calendar.DATE);
+			this.hour = calendar.get(Calendar.HOUR);
+			this.minute = calendar.get(Calendar.MINUTE);
+		}
+	}
+	
+	public boolean isNumeric() {
+	    if (this.value == null) {
+	        return false;
+	    }
+	    try {
+	        double d = Double.parseDouble(value);
+	    } catch (NumberFormatException nfe) {
+	        return false;
+	    }
+	    return true;
 	}
 	
 	public String getTabString() {

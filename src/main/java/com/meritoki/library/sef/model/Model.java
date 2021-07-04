@@ -67,6 +67,9 @@ public class Model {
 			format.header.source = batch.source.name;
 			format.header.link = batch.source.link;
 			format.header.meta = batch.getMetaString();
+			if(batch.solar != null) {
+				format.table.applySolar(batch.solar);
+			}
 		}
 		return new ArrayList<Format>(this.formatMap.values());
 	}

@@ -8,6 +8,7 @@ import java.util.Map;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.meritoki.library.sef.model.excel.Excel;
+import com.meritoki.library.sef.model.unit.Solar;
 import com.meritoki.library.sef.model.unit.Source;
 import com.meritoki.library.sef.model.unit.Station;
 
@@ -20,6 +21,10 @@ public class Batch {
 	public Source source = new Source();
 	@JsonProperty
 	public Station station = new Station();
+	@JsonProperty
+	public Solar solar = new Solar();
+	@JsonProperty
+	public List<String> exclude = new ArrayList<>();
 	@JsonProperty
 	public Map<String,Map<String,String>> alias = new HashMap<>();
 	@JsonProperty
