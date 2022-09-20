@@ -9,7 +9,8 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class SpreadSheet {
 	@JsonProperty
-	public int index;
+//	public int index;
+	public String index;
 	@JsonProperty
 	public Map<String,String> attribute = new HashMap<>();
 	@JsonProperty

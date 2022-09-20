@@ -4,11 +4,15 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.meritoki.library.sef.model.unit.Solar;
 
 public class Table {
 
+	static Logger logger = LogManager.getLogger(Table.class);
 	public List<Data> dataList = new ArrayList<>();
 	
 	@JsonIgnore
@@ -24,10 +28,10 @@ public class Table {
 		for (Data data : dataList) {
 			String dataString = data.getTabString();
 			if (data.isNumeric()) {
-				System.out.println("getDataStringList() dataString=" + dataString);
+				logger.info(dataString);
 				dataStringList.addLast(dataString);
 			} else {
-				System.err.println("getDataStringList() dataString=" + dataString+" NOT NUMERIC");
+				logger.error(dataString+" NOT NUMERIC");
 			}
 		}
 		return dataStringList;

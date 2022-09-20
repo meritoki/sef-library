@@ -40,7 +40,7 @@ import com.meritoki.library.sef.model.unit.Input;
  */
 public class Library {
 	static Logger logger = LogManager.getLogger(Library.class.getName());
-	public static String versionNumber = "0.1.202105";
+	public static String versionNumber = "0.2.202209";
 	public static String vendor = "Meritoki";
 	public static String about = "Version " + versionNumber + " Copyright " + vendor + " 2020-2021";
 	public static Option helpOption = new Option("h", "help", false, "Print usage information");
@@ -105,96 +105,100 @@ public class Library {
 		return NodeController.openBatch(new File(batchPath));
 	}
 
-	public static void process(Batch batch) {
+	public static void process(Batch batch) throws Exception {
 		List<Excel> excelList = batch.excels;
-		NumberFormat formatter = new DecimalFormat("#0.00");   
+		NumberFormat formatter = new DecimalFormat("#0.00");
 		for (Excel excel : excelList) {
 			XSSFWorkbook workbook = getWorkbook(excel.fileName);
 			if (workbook != null) {
 				logger.info("process(batch) workbook=" + excel.fileName);
 				List<SpreadSheet> spreadSheetList = excel.spreadSheets;
 				for (SpreadSheet spreadsheet : spreadSheetList) {
-					Frame frame = new Frame();
-					frame.attribute = spreadsheet.attribute;
-					XSSFSheet sheet = (XSSFSheet) workbook.getSheetAt(spreadsheet.index);
-					logger.info("process(batch) sheet=" + sheet.getSheetName());
-					List<Selector> selectorList = spreadsheet.selectors;
-					for (Selector selector : selectorList) {
-						logger.info("process(batch) selector=" + selector);
-						Object[] valueArray = selector.getValueArray();
-						if (valueArray != null) {
-							List<Integer> rowList = (List<Integer>) valueArray[0];
-							List<Integer> columnList = (List<Integer>) valueArray[1];
-							for (int i = 0; i < rowList.size(); i++) {
-								int rowIndex = rowList.get(i);
-								XSSFRow row = sheet.getRow(rowIndex);
-								if (row != null) {
-									for (int j = 0; j < columnList.size(); j++) {
-										int columnIndex = columnList.get(j);
-										XSSFCell cell = row.getCell(columnIndex);
-										if (cell != null) {
-											Input input = new Input();
-											List<Input> inputList = frame.inputMap.get(rowIndex);
-											if (inputList == null) {
-												inputList = new ArrayList<>();
-											}
-											String value;
-											switch (cell.getCellType()) {
-											case BLANK: {
+					List<Integer> indexList = parseIndex(spreadsheet.index);
+					for (Integer index : indexList) {
+						Frame frame = new Frame();
+						frame.attribute = spreadsheet.attribute;
+						XSSFSheet sheet = (XSSFSheet) workbook.getSheetAt(index);
+						logger.info("process(batch) sheet=" + sheet.getSheetName());
+						List<Selector> selectorList = spreadsheet.selectors;
+						for (Selector selector : selectorList) {
+							logger.info("process(batch) selector=" + selector);
+							Object[] valueArray = selector.getValueArray();
+							if (valueArray != null) {
+								List<Integer> rowList = (List<Integer>) valueArray[0];
+								List<Integer> columnList = (List<Integer>) valueArray[1];
+								for (int i = 0; i < rowList.size(); i++) {
+									int rowIndex = rowList.get(i);
+									XSSFRow row = sheet.getRow(rowIndex);
+									if (row != null) {
+										for (int j = 0; j < columnList.size(); j++) {
+											int columnIndex = columnList.get(j);
+											XSSFCell cell = row.getCell(columnIndex);
+											if (cell != null) {
+												Input input = new Input();
+												List<Input> inputList = frame.inputMap.get(rowIndex);
+												if (inputList == null) {
+													inputList = new ArrayList<>();
+												}
+												String value;
+												switch (cell.getCellType()) {
+												case BLANK: {
 //												System.out.println(ANSI_RED + "BLANK"+ANSI_RESET);
-												logger.warn("process(batch) BLANK value[" + rowIndex + "," + columnIndex
-														+ "]");
-												logger.warn("process(batch) selector=" + selector);
-												logger.warn("process(batch) sheet=" + sheet.getSheetName());
-												logger.warn("process(batch) workbook=" + excel.fileName);
-												break;
+													logger.warn("process(batch) BLANK value[" + rowIndex + ","
+															+ columnIndex + "]");
+													logger.warn("process(batch) selector=" + selector);
+													logger.warn("process(batch) sheet=" + sheet.getSheetName());
+													logger.warn("process(batch) workbook=" + excel.fileName);
+													break;
+												}
+												case NUMERIC: {
+													value = cell.getRawValue();
+													logger.debug("process(batch) NUMERIC value[" + rowIndex + ","
+															+ columnIndex + "]=" + value);
+													input.map.put("variable", selector.variable);
+													input.map.put("value", value);
+													input.map.put("statistic", selector.statistic);
+													input.map.put("units", selector.units);
+													inputList.add(input);
+													break;
+												}
+												case BOOLEAN:
+													logger.warn("process(batch) BOOLEAN not supported");
+													break;
+												case ERROR:
+													logger.warn("process(batch) ERROR not supported");
+													break;
+												case FORMULA:
+													logger.warn("process(batch) FORMULA not supported");
+													break;
+												case STRING:
+													value = cell.getStringCellValue();
+													value = value.trim();
+													logger.debug("process(batch) STRING value[" + rowIndex + ","
+															+ columnIndex + "]=" + value);
+													inputList.addAll(getInputList(selector, value));
+													break;
+												case _NONE:
+													logger.warn("process(batch) _NONE not supported");
+													break;
+												default:
+													logger.warn("process(batch) not supported");
+													break;
+												}
+												frame.inputMap.put(rowIndex, inputList);
+											} else {
+												logger.warn("process(batch) cell is null");
 											}
-											case NUMERIC: {
-												value = cell.getRawValue();
-												logger.info("process(batch) NUMERIC value[" + rowIndex + ","
-														+ columnIndex + "]=" + value);
-												input.map.put("variable", selector.variable);
-												input.map.put("value", value);
-												input.map.put("statistic", selector.statistic);
-												input.map.put("units", selector.units);
-												inputList.add(input);
-												break;
-											}
-											case BOOLEAN:
-												logger.warn("process(batch) BOOLEAN not supported");
-												break;
-											case ERROR:
-												logger.warn("process(batch) ERROR not supported");
-												break;
-											case FORMULA:
-												logger.warn("process(batch) FORMULA not supported");
-												break;
-											case STRING:
-												value = cell.getStringCellValue();
-												value = value.trim();
-												logger.info("process(batch) STRING value[" + rowIndex + ","
-														+ columnIndex + "]=" + value);
-												inputList.addAll(getInputList(selector, value));
-												break;
-											case _NONE:
-												logger.warn("process(batch) _NONE not supported");
-												break;
-											default:
-												logger.warn("process(batch) not supported");
-												break;
-											}
-											frame.inputMap.put(rowIndex, inputList);
-										} else {
-											logger.warn("process(batch) cell is null");
 										}
+									} else {
+										logger.warn("process(batch) row is null");
 									}
-								} else {
-									logger.warn("process(batch) row is null");
 								}
 							}
 						}
+						model.frameList.add(frame);
 					}
-					model.frameList.add(frame);
+					
 				}
 			}
 		}
@@ -259,14 +263,18 @@ public class Library {
 		String value = null;
 		Map<String, String> aliasMap = model.batch.alias.get(variable);
 		if (aliasMap != null) {
-			value = aliasMap.get(key);
+			if("time".equals(variable)) {
+				value = aliasMap.get(key.trim().toLowerCase());
+			} else {
+				value = aliasMap.get(key);
+			}
 		}
 
 		if (value == null) {
 			List<String> directionsList = Arrays.asList(directions);
 			if (directionsList.contains(key)) {
 				int index = directionsList.indexOf(key);
-				NumberFormat formatter = new DecimalFormat("#0.00");   
+				NumberFormat formatter = new DecimalFormat("#0.00");
 				value = formatter.format(5.625 * index);
 			}
 		}
@@ -290,4 +298,46 @@ public class Library {
 
 		return workbook;
 	}
+
+	public static List<Integer> parseIndex(String value) throws Exception {
+		List<Integer> pageList = new ArrayList<>();
+		value = value.toLowerCase();
+		value.trim();
+		if (value.contains("all")) {
+			if (value.equals("all")) {
+				pageList.add(-1);
+			} else {
+				throw new Exception("Invalid Index");
+			}
+		} else {
+			String[] commaArray = value.split(",");
+			for (String c : commaArray) {
+				c.trim();
+				if (c.contains("-")) {
+					String[] dashArray = c.split("-");
+					try {
+						int a = Integer.parseInt(dashArray[0].trim());
+						int b = Integer.parseInt(dashArray[1].trim());
+						if (a < b) {
+							for (int i = a; i <= b; i++) {
+								pageList.add(i);
+							}
+						}
+					} catch (Exception e) {
+						throw new Exception("Not integer page(s)");
+					}
+				} else {
+					try {
+						int a = Integer.parseInt(c);
+						pageList.add(a);
+					} catch (Exception e) {
+						throw new Exception("Not integer page(s)");
+					}
+				}
+			}
+		}
+		logger.info("parsePages(" + value + ") pageList=" + pageList);
+		return pageList;
+	}
+
 }
