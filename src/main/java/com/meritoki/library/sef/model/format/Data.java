@@ -42,20 +42,27 @@ public class Data {
 	public void applySolar(Solar solar) {
 		//UTC=localtime-(longitude/15);
 		if(this.hour != null) {
+//			System.out.println(year);
+//			System.out.println(month-1);
 			SimpleDateFormat format = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
 			Calendar calendar = Calendar.getInstance();
 			calendar.set(Calendar.YEAR,year);
 			calendar.set(Calendar.MONTH,month-1);
 			calendar.set(Calendar.DATE,day);
-			calendar.set(Calendar.HOUR,hour);
+			calendar.set(Calendar.HOUR_OF_DAY,hour);
 			calendar.set(Calendar.MINUTE,(minute != null)?minute:0);
 			calendar.set(Calendar.SECOND,0);
 			this.meta = ((this.meta.isEmpty())?"":this.meta+",")+"orig.time="+format.format(calendar.getTime());
-			calendar.add(Calendar.HOUR, -(int)(solar.longitude/15));
+			double hourDouble = (solar.longitude/15);
+			int hourInt = (int) hourDouble;
+			double hourDecimal = hourDouble - hourInt;
+			int minute = (int) (hourDecimal * 60);
+			calendar.add(Calendar.HOUR_OF_DAY, -hourInt);
+			calendar.add(Calendar.MINUTE, -minute);
 			this.year = calendar.get(Calendar.YEAR);
 			this.month = calendar.get(Calendar.MONTH)+1;
 			this.day = calendar.get(Calendar.DATE);
-			this.hour = calendar.get(Calendar.HOUR);
+			this.hour = calendar.get(Calendar.HOUR_OF_DAY);
 			this.minute = calendar.get(Calendar.MINUTE);
 		}
 	}
