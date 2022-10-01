@@ -10,6 +10,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
+import java.util.Map.Entry;
 
 import org.apache.commons.cli.CommandLine;
 import org.apache.commons.cli.CommandLineParser;
@@ -31,6 +32,7 @@ import com.meritoki.library.sef.model.excel.Excel;
 import com.meritoki.library.sef.model.excel.Selector;
 import com.meritoki.library.sef.model.excel.SpreadSheet;
 import com.meritoki.library.sef.model.format.Format;
+import com.meritoki.library.sef.model.unit.Conversion;
 import com.meritoki.library.sef.model.unit.Frame;
 import com.meritoki.library.sef.model.unit.Input;
 
@@ -143,7 +145,6 @@ public class Library {
 												String value;
 												switch (cell.getCellType()) {
 												case BLANK: {
-//												System.out.println(ANSI_RED + "BLANK"+ANSI_RESET);
 													logger.warn("process(batch) BLANK value[" + rowIndex + ","
 															+ columnIndex + "]");
 													logger.warn("process(batch) selector=" + selector);
@@ -153,13 +154,14 @@ public class Library {
 												}
 												case NUMERIC: {
 													value = cell.getRawValue();
+													value = valueReplace(value, selector.replace);
 													logger.debug("process(batch) NUMERIC value[" + rowIndex + ","
 															+ columnIndex + "]=" + value);
-													input.map.put("variable", selector.variable);
-													input.map.put("value", value);
-													input.map.put("statistic", selector.statistic);
-													input.map.put("units", selector.units);
-													inputList.add(input);
+//													input.map.put("variable", selector.variable);
+//													input.map.put("value", value);
+//													input.map.put("statistic", selector.statistic);
+//													input.map.put("units", selector.units);
+													inputList.addAll(getInputList(selector, value));
 													break;
 												}
 												case BOOLEAN:
@@ -173,6 +175,7 @@ public class Library {
 													break;
 												case STRING:
 													value = cell.getStringCellValue();
+													value = valueReplace(value, selector.replace);
 													value = value.trim();
 													logger.debug("process(batch) STRING value[" + rowIndex + ","
 															+ columnIndex + "]=" + value);
@@ -198,7 +201,7 @@ public class Library {
 						}
 						model.frameList.add(frame);
 					}
-					
+
 				}
 			}
 		}
@@ -218,31 +221,57 @@ public class Library {
 		List<Input> inputList = new ArrayList<>();
 		if (!model.batch.exclude.contains(value) && value.length() > 0) {
 			if (selector.delimeter != null) {
-				String[] vArray = value.split(selector.delimeter);
+				String[] delimeterArray = value.split(selector.delimeter);
 				String[] hourArray = (selector.hour != null) ? selector.hour.split(",") : new String[0];
 				String[] minuteArray = (selector.minute != null && !selector.minute.equals("null"))
 						? selector.minute.split(",")
 						: new String[0];
-				for (int p = 0; p < vArray.length; p++) {
+				if (selector.join != null) {
+					if (selector.bufferIndex != null && delimeterArray.length > 1) {
+						selector.buffer = delimeterArray[selector.bufferIndex];
+						value = valueJoin(null, delimeterArray, selector.join);
+					} else {
+						value = valueJoin(selector.buffer, delimeterArray, selector.join);
+					}
 					Input input = new Input();
-					value = vArray[p].trim();
 					input.map.put("meta", "Orig=" + value);
 					value = getAlias(selector.variable, value);
+					value = valueConvert(value,selector.conversion);
 					input.map.put("variable", selector.variable);
 					input.map.put("value", value);
 					input.map.put("statistic", selector.statistic);
 					input.map.put("units", selector.units);
-					if (p < hourArray.length) {
-						input.map.put("hour", hourArray[p]);
+					if (0 < hourArray.length) {
+						input.map.put("hour", hourArray[0]);
 					}
-					if (p < minuteArray.length) {
-						input.map.put("minute", minuteArray[p]);
+					if (0 < minuteArray.length) {
+						input.map.put("minute", minuteArray[0]);
 					}
 					inputList.add(input);
+				} else {
+					for (int p = 0; p < delimeterArray.length; p++) {
+						value = delimeterArray[p].trim();
+						Input input = new Input();
+						input.map.put("meta", "Orig=" + value);
+						value = getAlias(selector.variable, value);
+						value = valueConvert(value,selector.conversion);
+						input.map.put("variable", selector.variable);
+						input.map.put("value", value);
+						input.map.put("statistic", selector.statistic);
+						input.map.put("units", selector.units);
+						if (p < hourArray.length) {
+							input.map.put("hour", hourArray[p]);
+						}
+						if (p < minuteArray.length) {
+							input.map.put("minute", minuteArray[p]);
+						}
+						inputList.add(input);
+					}
 				}
 			} else {
 				Input input = new Input();
 				value = getAlias(selector.variable, value);
+				value = valueConvert(value,selector.conversion);
 				input.map.put("variable", selector.variable);
 				input.map.put("value", value);
 				input.map.put("statistic", selector.statistic);
@@ -251,6 +280,21 @@ public class Library {
 			}
 		}
 		return inputList;
+	}
+
+	public static String valueJoin(String buffer, String[] splitArray, String join) {
+
+		String value = (buffer != null) ? buffer + join : "";
+		for (int i = 0; i < splitArray.length; i++) {
+			String split = splitArray[i];
+			if (i == 0) {
+				value += split;
+			} else {
+				value += join + split;
+			}
+		}
+		logger.info("valueJoin(" + buffer + "," + splitArray + "," + join + ") value=" + value);
+		return value;
 	}
 
 	public static String[] directions = { "N", "NhE", "NbE", "NbEhe", "NNE", "NNEhE", "NEbN", "NEhN", "NE", "NEhE",
@@ -263,7 +307,7 @@ public class Library {
 		String value = null;
 		Map<String, String> aliasMap = model.batch.alias.get(variable);
 		if (aliasMap != null) {
-			if("time".equals(variable)) {
+			if ("time".equals(variable)) {
 				value = aliasMap.get(key.trim().toLowerCase());
 			} else {
 				value = aliasMap.get(key);
@@ -281,6 +325,30 @@ public class Library {
 		return (value != null) ? value : key;
 	}
 
+	public static String valueReplace(String value, Map<String, String> replace) {
+		for (Entry<String, String> entry : replace.entrySet()) {
+			value = value.replace(entry.getKey(), entry.getValue());
+		}
+		return value;
+	}
+
+	public static String valueConvert(String value, Conversion conversion) {
+		if (conversion != null) {
+			DecimalFormat df = new DecimalFormat("#.00");
+			switch (conversion) {
+			case INCH_TO_MM: {
+				Double d = (value != null) ? Double.parseDouble(value) : null;
+				if (d != null) {
+					d *= 25.4;
+					value = df.format(d);
+				}
+				break;
+			}
+			}
+		}
+		return value;
+	}
+
 	public static XSSFWorkbook getWorkbook(String fileName) {
 		logger.info("getWorkbook(" + fileName + ")");
 		FileInputStream inputStream;
@@ -289,10 +357,8 @@ public class Library {
 			inputStream = new FileInputStream(new File(fileName));
 			workbook = new XSSFWorkbook(inputStream);
 		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 
@@ -324,19 +390,19 @@ public class Library {
 							}
 						}
 					} catch (Exception e) {
-						throw new Exception("Not integer page(s)");
+						throw new Exception("Not integer(s)");
 					}
 				} else {
 					try {
 						int a = Integer.parseInt(c);
 						pageList.add(a);
 					} catch (Exception e) {
-						throw new Exception("Not integer page(s)");
+						throw new Exception("Not integer(s)");
 					}
 				}
 			}
 		}
-		logger.info("parsePages(" + value + ") pageList=" + pageList);
+//		logger.info("parseIndex(" + value + ") indexList=" + pageList);
 		return pageList;
 	}
 
