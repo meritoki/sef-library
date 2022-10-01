@@ -1,6 +1,8 @@
 package com.meritoki.library.sef.model.excel;
 
 import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -10,6 +12,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.ObjectWriter;
 import com.meritoki.library.sef.controller.parse.ParseController;
+import com.meritoki.library.sef.model.unit.Conversion;
 
 public class Selector {
 	
@@ -25,9 +28,19 @@ public class Selector {
 	@JsonProperty
 	public String delimeter;
 	@JsonProperty
+	public Integer bufferIndex;
+	@JsonIgnore
+	public String buffer;
+	@JsonProperty
+	public String join;
+	@JsonProperty
 	public String hour;
 	@JsonProperty
 	public String minute;
+	@JsonProperty
+	public Map<String,String> replace = new HashMap<>();
+	@JsonProperty
+	public Conversion conversion;
 	
 	@JsonIgnore
 	public Object[] getValueArray() {
