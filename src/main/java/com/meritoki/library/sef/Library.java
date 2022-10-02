@@ -64,7 +64,6 @@ public class Library {
 	public static final String ANSI_WHITE = "\u001B[37m";
 
 	public static void main(String[] args) {
-
 		Options options = new Options();
 		options.addOption(helpOption);
 		options.addOption(versionOption);
@@ -87,13 +86,11 @@ public class Library {
 		} catch (org.apache.commons.cli.ParseException ex) {
 			logger.error(ex);
 		}
-
 		try {
 			model.batch = null;
 			if (batchPath != null) {
 				model.batch = getBatch(batchPath);
 			}
-
 			if (model.batch != null) {
 				System.out.println("Batch: " + batchPath);
 				process(model.batch);
@@ -109,7 +106,6 @@ public class Library {
 
 	public static void process(Batch batch) throws Exception {
 		List<Excel> excelList = batch.excels;
-		NumberFormat formatter = new DecimalFormat("#0.00");
 		for (Excel excel : excelList) {
 			XSSFWorkbook workbook = getWorkbook(excel.fileName);
 			if (workbook != null) {
@@ -155,6 +151,10 @@ public class Library {
 												case NUMERIC: {
 													value = cell.getRawValue();
 													value = valueReplace(value, selector.replace);
+													double d = Double.parseDouble(value);
+													if ((d == Math.floor(d)) && !Double.isInfinite(d)) {
+													    value = String.valueOf((int)d);
+													}
 													logger.debug("process(batch) NUMERIC value[" + rowIndex + ","
 															+ columnIndex + "]=" + value);
 //													input.map.put("variable", selector.variable);
@@ -201,11 +201,9 @@ public class Library {
 						}
 						model.frameList.add(frame);
 					}
-
 				}
 			}
 		}
-
 		File output = new File(model.batch.outputPath);
 		if (!output.exists()) {
 			output.mkdirs();
@@ -220,12 +218,14 @@ public class Library {
 	public static List<Input> getInputList(Selector selector, String value) {
 		List<Input> inputList = new ArrayList<>();
 		if (!model.batch.exclude.contains(value) && value.length() > 0) {
+			String[] hourArray = (selector.hour != null && !selector.hour.equals("null")) ? selector.hour.split(",") : new String[0];
+			String[] minuteArray = (selector.minute != null && !selector.minute.equals("null"))
+					? selector.minute.split(",")
+					: new String[0];
+//			logger.info("hour={"+String.join(",", hourArray)+"} minute={"+String.join(",", minuteArray)+"}");
 			if (selector.delimeter != null) {
 				String[] delimeterArray = value.split(selector.delimeter);
-				String[] hourArray = (selector.hour != null) ? selector.hour.split(",") : new String[0];
-				String[] minuteArray = (selector.minute != null && !selector.minute.equals("null"))
-						? selector.minute.split(",")
-						: new String[0];
+				
 				if (selector.join != null) {
 					if (selector.bufferIndex != null && delimeterArray.length > 1) {
 						selector.buffer = delimeterArray[selector.bufferIndex];
@@ -270,12 +270,19 @@ public class Library {
 				}
 			} else {
 				Input input = new Input();
+				input.map.put("meta", "Orig=" + value);
 				value = getAlias(selector.variable, value);
 				value = valueConvert(value,selector.conversion);
 				input.map.put("variable", selector.variable);
 				input.map.put("value", value);
 				input.map.put("statistic", selector.statistic);
 				input.map.put("units", selector.units);
+				if (0 < hourArray.length) {
+					input.map.put("hour", hourArray[0]);
+				}
+				if (0 < minuteArray.length) {
+					input.map.put("minute", minuteArray[0]);
+				}
 				inputList.add(input);
 			}
 		}
@@ -293,7 +300,7 @@ public class Library {
 				value += join + split;
 			}
 		}
-		logger.info("valueJoin(" + buffer + "," + splitArray + "," + join + ") value=" + value);
+		logger.debug("valueJoin(" + buffer + ",{" + String.join(",", splitArray) + "}," + join + ") value=" + value);
 		return value;
 	}
 
@@ -331,15 +338,26 @@ public class Library {
 		}
 		return value;
 	}
+	
+
 
 	public static String valueConvert(String value, Conversion conversion) {
 		if (conversion != null) {
-			DecimalFormat df = new DecimalFormat("#.00");
+			DecimalFormat df = new DecimalFormat("00.00");
 			switch (conversion) {
 			case INCH_TO_MM: {
 				Double d = (value != null) ? Double.parseDouble(value) : null;
 				if (d != null) {
 					d *= 25.4;
+					value = df.format(d);
+				}
+				break;
+			}
+			case FAHRENHEIT_TO_CELSIUS: {
+				Double d = (value != null) ? Double.parseDouble(value) : null;
+				if (d != null) {
+					d -= 32;
+					d *= (5.0/9.0);
 					value = df.format(d);
 				}
 				break;
