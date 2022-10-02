@@ -7,7 +7,7 @@ import com.meritoki.library.sef.controller.node.NodeController;
 
 public class Format {
 	public String filePath = ".";
-	public String fileName = "test.txt";//<Source_Code>_<Station_Code>_<StartDate>_<EndDate>_<Variable>.tsv
+	public String fileName = "Untitled.tsv";
 	public Header header = new Header();
 	public Table table = new Table();
 	

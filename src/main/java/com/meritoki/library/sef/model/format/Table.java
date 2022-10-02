@@ -1,6 +1,7 @@
 package com.meritoki.library.sef.model.format;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -25,6 +26,12 @@ public class Table {
 	@JsonIgnore
 	public List<String> getDataStringList() {
 		LinkedList<String> dataStringList = new LinkedList<>();
+		Comparator<Data> compareData = Comparator.comparing(Data::getYear)
+									.thenComparingInt(Data::getMonth)
+									.thenComparingInt(Data::getDay)
+									.thenComparingInt(Data::getHour)
+									.thenComparingInt(Data::getMinute);
+		this.dataList.sort(compareData);
 		for (Data data : dataList) {
 			String dataString = data.getTabString();
 			if (data.isNumeric()) {

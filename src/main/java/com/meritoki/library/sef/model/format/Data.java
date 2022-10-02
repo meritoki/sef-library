@@ -19,6 +19,26 @@ public class Data {
 	public String statistic;
 	public String meta;
 	
+	public int getYear() {
+		return (this.year == null)?-1:this.year;
+	}
+	
+	public int getMonth() {
+		return (this.month == null)?-1:this.month;
+	}
+	
+	public int getDay() {
+		return (this.day == null)?-1:this.day;
+	}
+	
+	public int getHour() {
+		return (this.hour == null)?-1:this.hour;
+	}
+	
+	public int getMinute() {
+		return (this.minute == null)?-1:this.minute;
+	}
+	
 	public static String getHeaderString() {
 		StringBuilder stringBuilder = new StringBuilder();
 		stringBuilder.append("Year");
@@ -40,10 +60,7 @@ public class Data {
 	}
 	
 	public void applySolar(Solar solar) {
-		//UTC=localtime-(longitude/15);
 		if(this.hour != null) {
-//			System.out.println(year);
-//			System.out.println(month-1);
 			SimpleDateFormat format = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
 			Calendar calendar = Calendar.getInstance();
 			calendar.set(Calendar.YEAR,year);

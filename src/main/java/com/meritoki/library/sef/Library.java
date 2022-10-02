@@ -153,7 +153,7 @@ public class Library {
 													value = valueReplace(value, selector.replace);
 													double d = Double.parseDouble(value);
 													if ((d == Math.floor(d)) && !Double.isInfinite(d)) {
-													    value = String.valueOf((int)d);
+														value = String.valueOf((int) d);
 													}
 													logger.debug("process(batch) NUMERIC value[" + rowIndex + ","
 															+ columnIndex + "]=" + value);
@@ -177,7 +177,7 @@ public class Library {
 													value = cell.getStringCellValue();
 													value = valueReplace(value, selector.replace);
 													value = value.trim();
-													logger.debug("process(batch) STRING value[" + rowIndex + ","
+													logger.info("process(batch) STRING value[" + rowIndex + ","
 															+ columnIndex + "]=" + value);
 													inputList.addAll(getInputList(selector, value));
 													break;
@@ -218,14 +218,13 @@ public class Library {
 	public static List<Input> getInputList(Selector selector, String value) {
 		List<Input> inputList = new ArrayList<>();
 		if (!model.batch.exclude.contains(value) && value.length() > 0) {
-			String[] hourArray = (selector.hour != null && !selector.hour.equals("null")) ? selector.hour.split(",") : new String[0];
+			String[] hourArray = (selector.hour != null && !selector.hour.equals("null")) ? selector.hour.split(",")
+					: new String[0];
 			String[] minuteArray = (selector.minute != null && !selector.minute.equals("null"))
 					? selector.minute.split(",")
 					: new String[0];
-//			logger.info("hour={"+String.join(",", hourArray)+"} minute={"+String.join(",", minuteArray)+"}");
 			if (selector.delimeter != null) {
 				String[] delimeterArray = value.split(selector.delimeter);
-				
 				if (selector.join != null) {
 					if (selector.bufferIndex != null && delimeterArray.length > 1) {
 						selector.buffer = delimeterArray[selector.bufferIndex];
@@ -236,7 +235,7 @@ public class Library {
 					Input input = new Input();
 					input.map.put("meta", "Orig=" + value);
 					value = getAlias(selector.variable, value);
-					value = valueConvert(value,selector.conversion);
+					value = valueConvert(value, selector.conversion);
 					input.map.put("variable", selector.variable);
 					input.map.put("value", value);
 					input.map.put("statistic", selector.statistic);
@@ -254,7 +253,7 @@ public class Library {
 						Input input = new Input();
 						input.map.put("meta", "Orig=" + value);
 						value = getAlias(selector.variable, value);
-						value = valueConvert(value,selector.conversion);
+						value = valueConvert(value, selector.conversion);
 						input.map.put("variable", selector.variable);
 						input.map.put("value", value);
 						input.map.put("statistic", selector.statistic);
@@ -272,7 +271,7 @@ public class Library {
 				Input input = new Input();
 				input.map.put("meta", "Orig=" + value);
 				value = getAlias(selector.variable, value);
-				value = valueConvert(value,selector.conversion);
+				value = valueConvert(value, selector.conversion);
 				input.map.put("variable", selector.variable);
 				input.map.put("value", value);
 				input.map.put("statistic", selector.statistic);
@@ -290,7 +289,6 @@ public class Library {
 	}
 
 	public static String valueJoin(String buffer, String[] splitArray, String join) {
-
 		String value = (buffer != null) ? buffer + join : "";
 		for (int i = 0; i < splitArray.length; i++) {
 			String split = splitArray[i];
@@ -338,8 +336,6 @@ public class Library {
 		}
 		return value;
 	}
-	
-
 
 	public static String valueConvert(String value, Conversion conversion) {
 		if (conversion != null) {
@@ -357,7 +353,7 @@ public class Library {
 				Double d = (value != null) ? Double.parseDouble(value) : null;
 				if (d != null) {
 					d -= 32;
-					d *= (5.0/9.0);
+					d *= (5.0 / 9.0);
 					value = df.format(d);
 				}
 				break;
