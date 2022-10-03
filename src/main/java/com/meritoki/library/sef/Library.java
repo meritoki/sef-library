@@ -177,7 +177,7 @@ public class Library {
 													value = cell.getStringCellValue();
 													value = valueReplace(value, selector.replace);
 													value = value.trim();
-													logger.info("process(batch) STRING value[" + rowIndex + ","
+													logger.debug("process(batch) STRING value[" + rowIndex + ","
 															+ columnIndex + "]=" + value);
 													inputList.addAll(getInputList(selector, value));
 													break;
