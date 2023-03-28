@@ -28,6 +28,12 @@ public class Selector {
 	@JsonProperty
 	public String delimeter;
 	@JsonProperty
+	public String conditionalOperator;
+	@JsonProperty
+	public String arithmeticOperator;
+	@JsonProperty
+	public String operand;
+	@JsonProperty
 	public Integer bufferIndex;
 	@JsonIgnore
 	public String buffer;

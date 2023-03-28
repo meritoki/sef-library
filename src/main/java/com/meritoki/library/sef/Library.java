@@ -150,7 +150,7 @@ public class Library {
 												}
 												case NUMERIC: {
 													value = cell.getRawValue();
-													value = valueReplace(value, selector.replace);
+													value = replaceValue(value, selector.replace);
 													double d = Double.parseDouble(value);
 													if ((d == Math.floor(d)) && !Double.isInfinite(d)) {
 														value = String.valueOf((int) d);
@@ -175,7 +175,7 @@ public class Library {
 													break;
 												case STRING:
 													value = cell.getStringCellValue();
-													value = valueReplace(value, selector.replace);
+													value = replaceValue(value, selector.replace);
 													value = value.trim();
 													logger.debug("process(batch) STRING value[" + rowIndex + ","
 															+ columnIndex + "]=" + value);
@@ -228,14 +228,18 @@ public class Library {
 				if (selector.join != null) {
 					if (selector.bufferIndex != null && delimeterArray.length > 1) {
 						selector.buffer = delimeterArray[selector.bufferIndex];
-						value = valueJoin(null, delimeterArray, selector.join);
+						value = joinValue(null, delimeterArray, selector.join);
 					} else {
-						value = valueJoin(selector.buffer, delimeterArray, selector.join);
+						value = joinValue(selector.buffer, delimeterArray, selector.join);
 					}
+					
 					Input input = new Input();
 					input.map.put("meta", "Orig=" + value);
 					value = getAlias(selector.variable, value);
-					value = valueConvert(value, selector.conversion);
+					value = convertValue(value, selector.conversion);
+					if(compareValue(value,selector)) {
+						value = arithmeticValue(value,selector);
+					}
 					input.map.put("variable", selector.variable);
 					input.map.put("value", value);
 					input.map.put("statistic", selector.statistic);
@@ -253,7 +257,10 @@ public class Library {
 						Input input = new Input();
 						input.map.put("meta", "Orig=" + value);
 						value = getAlias(selector.variable, value);
-						value = valueConvert(value, selector.conversion);
+						value = convertValue(value, selector.conversion);
+						if(compareValue(value,selector)) {
+							value = arithmeticValue(value,selector);
+						}
 						input.map.put("variable", selector.variable);
 						input.map.put("value", value);
 						input.map.put("statistic", selector.statistic);
@@ -271,7 +278,10 @@ public class Library {
 				Input input = new Input();
 				input.map.put("meta", "Orig=" + value);
 				value = getAlias(selector.variable, value);
-				value = valueConvert(value, selector.conversion);
+				value = convertValue(value, selector.conversion);
+				if(compareValue(value,selector)) {
+					value = arithmeticValue(value,selector);
+				}
 				input.map.put("variable", selector.variable);
 				input.map.put("value", value);
 				input.map.put("statistic", selector.statistic);
@@ -288,7 +298,14 @@ public class Library {
 		return inputList;
 	}
 
-	public static String valueJoin(String buffer, String[] splitArray, String join) {
+	/**
+	 * Function convert String cells with Multiple Integer Values into Decimals with Join (.) as an example
+	 * @param buffer
+	 * @param splitArray
+	 * @param join
+	 * @return
+	 */
+	public static String joinValue(String buffer, String[] splitArray, String join) {
 		String value = (buffer != null) ? buffer + join : "";
 		for (int i = 0; i < splitArray.length; i++) {
 			String split = splitArray[i];
@@ -300,6 +317,88 @@ public class Library {
 		}
 		logger.debug("valueJoin(" + buffer + ",{" + String.join(",", splitArray) + "}," + join + ") value=" + value);
 		return value;
+	}
+
+	/**
+	 * Function replaces String in value with a key-value map
+	 * @param value
+	 * @param replace
+	 * @return
+	 */
+	public static String replaceValue(String value, Map<String, String> replace) {
+		for (Entry<String, String> entry : replace.entrySet()) {
+			value = value.replace(entry.getKey(), entry.getValue());
+		}
+		return value;
+	}
+
+	public static String convertValue(String value, Conversion conversion) {
+		if (conversion != null) {
+			DecimalFormat df = new DecimalFormat("00.00");
+			switch (conversion) {
+			case INCH_TO_MM: {
+				Double d = (value != null) ? Double.parseDouble(value) : null;
+				if (d != null) {
+					d *= 25.4;
+					value = df.format(d);
+				}
+				break;
+			}
+			case FAHRENHEIT_TO_CELSIUS: {
+				Double d = (value != null) ? Double.parseDouble(value) : null;
+				if (d != null) {
+					d -= 32;
+					d *= (5.0 / 9.0);
+					value = df.format(d);
+				}
+				break;
+			}
+			}
+		}
+		return value;
+	}
+	
+	public static boolean compareValue(String value, Selector selector) {
+		boolean flag = false;
+		if(selector.conditionalOperator != null && selector.operand != null) {
+			
+			Double v = (value != null) ? Double.parseDouble(value) : null;
+			Double operand = Double.parseDouble(selector.operand);
+			switch(selector.conditionalOperator) {
+			case "<": {
+				flag = v < operand; 
+				break;
+			}
+			case ">": {
+				flag = v > operand;
+				break;
+			}
+			}
+			
+		}
+		return flag;
+	}
+	
+	public static String arithmeticValue(String value, Selector selector) {
+		String v = value;
+		if(selector.arithmeticOperator != null && selector.operand != null) {
+			Double d = (value != null) ? Double.parseDouble(value) : null;
+			Double operand = Double.parseDouble(selector.operand);
+			DecimalFormat df = new DecimalFormat("00.00");
+			switch(selector.arithmeticOperator) {
+			case "+" :{
+				d += operand;
+				v = df.format(d);
+				break;
+			}
+			case "-": {
+				d -= operand;
+				v = df.format(d);
+				break;
+			}
+			}
+		}
+		return v;
 	}
 
 	public static String[] directions = { "N", "NhE", "NbE", "NbEhe", "NNE", "NNEhE", "NEbN", "NEhN", "NE", "NEhE",
@@ -328,39 +427,6 @@ public class Library {
 			}
 		}
 		return (value != null) ? value : key;
-	}
-
-	public static String valueReplace(String value, Map<String, String> replace) {
-		for (Entry<String, String> entry : replace.entrySet()) {
-			value = value.replace(entry.getKey(), entry.getValue());
-		}
-		return value;
-	}
-
-	public static String valueConvert(String value, Conversion conversion) {
-		if (conversion != null) {
-			DecimalFormat df = new DecimalFormat("00.00");
-			switch (conversion) {
-			case INCH_TO_MM: {
-				Double d = (value != null) ? Double.parseDouble(value) : null;
-				if (d != null) {
-					d *= 25.4;
-					value = df.format(d);
-				}
-				break;
-			}
-			case FAHRENHEIT_TO_CELSIUS: {
-				Double d = (value != null) ? Double.parseDouble(value) : null;
-				if (d != null) {
-					d -= 32;
-					d *= (5.0 / 9.0);
-					value = df.format(d);
-				}
-				break;
-			}
-			}
-		}
-		return value;
 	}
 
 	public static XSSFWorkbook getWorkbook(String fileName) {
