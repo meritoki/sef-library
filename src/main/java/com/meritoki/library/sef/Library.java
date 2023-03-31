@@ -57,7 +57,7 @@ import com.meritoki.library.sef.model.unit.Input;
  */
 public class Library {
 	static Logger logger = LogManager.getLogger(Library.class.getName());
-	public static String versionNumber = "0.3.202303";
+	public static String versionNumber = "0.3.202303-alpha";
 	public static String vendor = "Meritoki";
 	public static String about = "Version " + versionNumber + " Copyright " + vendor + " 2020-2023";
 	public static Option helpOption = new Option("h", "help", false, "Print usage information");
