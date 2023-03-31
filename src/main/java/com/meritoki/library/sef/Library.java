@@ -1,3 +1,18 @@
+/*
+ * Copyright 2021-2023 Joaquin Osvaldo Rodriguez
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 package com.meritoki.library.sef;
 
 import java.io.File;
@@ -42,7 +57,7 @@ import com.meritoki.library.sef.model.unit.Input;
  */
 public class Library {
 	static Logger logger = LogManager.getLogger(Library.class.getName());
-	public static String versionNumber = "0.2.202209";
+	public static String versionNumber = "0.3.202303";
 	public static String vendor = "Meritoki";
 	public static String about = "Version " + versionNumber + " Copyright " + vendor + " 2020-2021";
 	public static Option helpOption = new Option("h", "help", false, "Print usage information");
