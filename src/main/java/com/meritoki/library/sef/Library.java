@@ -1,5 +1,5 @@
 /*
- * Copyright 2021-2023 Joaquin Osvaldo Rodriguez
+ * Copyright 2020-2023 Joaquin Osvaldo Rodriguez
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -59,7 +59,7 @@ public class Library {
 	static Logger logger = LogManager.getLogger(Library.class.getName());
 	public static String versionNumber = "0.3.202303";
 	public static String vendor = "Meritoki";
-	public static String about = "Version " + versionNumber + " Copyright " + vendor + " 2020-2021";
+	public static String about = "Version " + versionNumber + " Copyright " + vendor + " 2020-2023";
 	public static Option helpOption = new Option("h", "help", false, "Print usage information");
 	public static Option versionOption = new Option("v", "version", false, "Print version information");
 	public static Option batchPathOption = Option.builder("b").longOpt("batch").desc("Option to input batch path")
