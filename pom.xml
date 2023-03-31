@@ -5,7 +5,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.meritoki.library</groupId>
 	<artifactId>sef</artifactId>
-	<version>0.3.202303</version>
+	<version>0.3.202303-alpha</version>
 	<name>sef-library</name>
 	<description>SEF Library is used to manage interface with the Copernicus Station Exchange Format</description>
 	<properties>
