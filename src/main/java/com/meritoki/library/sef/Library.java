@@ -233,6 +233,7 @@ public class Library {
 	public static List<Input> getInputList(Selector selector, String value) {
 		List<Input> inputList = new ArrayList<>();
 		if (!model.batch.exclude.contains(value) && value.length() > 0) {
+			value = getReplacement(selector.variable,value);
 			String[] hourArray = (selector.hour != null && !selector.hour.equals("null")) ? selector.hour.split(",")
 					: new String[0];
 			String[] minuteArray = (selector.minute != null && !selector.minute.equals("null"))
@@ -247,13 +248,13 @@ public class Library {
 					} else {
 						value = joinValue(selector.buffer, delimeterArray, selector.join);
 					}
-					
+
 					Input input = new Input();
 					input.map.put("meta", "Orig=" + value);
 					value = getAlias(selector.variable, value);
 					value = convertValue(value, selector.conversion);
-					if(compareValue(value,selector)) {
-						value = arithmeticValue(value,selector);
+					if (compareValue(value, selector)) {
+						value = arithmeticValue(value, selector);
 					}
 					input.map.put("variable", selector.variable);
 					input.map.put("value", value);
@@ -269,24 +270,26 @@ public class Library {
 				} else {
 					for (int p = 0; p < delimeterArray.length; p++) {
 						value = delimeterArray[p].trim();
-						Input input = new Input();
-						input.map.put("meta", "Orig=" + value);
-						value = getAlias(selector.variable, value);
-						value = convertValue(value, selector.conversion);
-						if(compareValue(value,selector)) {
-							value = arithmeticValue(value,selector);
+						if (!model.batch.exclude.contains(value) && value.length() > 0) {
+							Input input = new Input();
+							input.map.put("meta", "Orig=" + value);
+							value = getAlias(selector.variable, value);
+							value = convertValue(value, selector.conversion);
+							if (compareValue(value, selector)) {
+								value = arithmeticValue(value, selector);
+							}
+							input.map.put("variable", selector.variable);
+							input.map.put("value", value);
+							input.map.put("statistic", selector.statistic);
+							input.map.put("units", selector.units);
+							if (p < hourArray.length) {
+								input.map.put("hour", hourArray[p]);
+							}
+							if (p < minuteArray.length) {
+								input.map.put("minute", minuteArray[p]);
+							}
+							inputList.add(input);
 						}
-						input.map.put("variable", selector.variable);
-						input.map.put("value", value);
-						input.map.put("statistic", selector.statistic);
-						input.map.put("units", selector.units);
-						if (p < hourArray.length) {
-							input.map.put("hour", hourArray[p]);
-						}
-						if (p < minuteArray.length) {
-							input.map.put("minute", minuteArray[p]);
-						}
-						inputList.add(input);
 					}
 				}
 			} else {
@@ -294,8 +297,8 @@ public class Library {
 				input.map.put("meta", "Orig=" + value);
 				value = getAlias(selector.variable, value);
 				value = convertValue(value, selector.conversion);
-				if(compareValue(value,selector)) {
-					value = arithmeticValue(value,selector);
+				if (compareValue(value, selector)) {
+					value = arithmeticValue(value, selector);
 				}
 				input.map.put("variable", selector.variable);
 				input.map.put("value", value);
@@ -314,7 +317,9 @@ public class Library {
 	}
 
 	/**
-	 * Function convert String cells with Multiple Integer Values into Decimals with Join (.) as an example
+	 * Function convert String cells with Multiple Integer Values into Decimals with
+	 * Join (.) as an example
+	 * 
 	 * @param buffer
 	 * @param splitArray
 	 * @param join
@@ -336,6 +341,7 @@ public class Library {
 
 	/**
 	 * Function replaces String in value with a key-value map
+	 * 
 	 * @param value
 	 * @param replace
 	 * @return
@@ -372,16 +378,16 @@ public class Library {
 		}
 		return value;
 	}
-	
+
 	public static boolean compareValue(String value, Selector selector) {
 		boolean flag = false;
-		if(selector.conditionalOperator != null && selector.operand != null) {
-			
+		if (selector.conditionalOperator != null && selector.operand != null) {
+
 			Double v = (value != null) ? Double.parseDouble(value) : null;
 			Double operand = Double.parseDouble(selector.operand);
-			switch(selector.conditionalOperator) {
+			switch (selector.conditionalOperator) {
 			case "<": {
-				flag = v < operand; 
+				flag = v < operand;
 				break;
 			}
 			case ">": {
@@ -389,19 +395,19 @@ public class Library {
 				break;
 			}
 			}
-			
+
 		}
 		return flag;
 	}
-	
+
 	public static String arithmeticValue(String value, Selector selector) {
 		String v = value;
-		if(selector.arithmeticOperator != null && selector.operand != null) {
+		if (selector.arithmeticOperator != null && selector.operand != null) {
 			Double d = (value != null) ? Double.parseDouble(value) : null;
 			Double operand = Double.parseDouble(selector.operand);
 			DecimalFormat df = new DecimalFormat("00.00");
-			switch(selector.arithmeticOperator) {
-			case "+" :{
+			switch (selector.arithmeticOperator) {
+			case "+": {
 				d += operand;
 				v = df.format(d);
 				break;
@@ -442,6 +448,20 @@ public class Library {
 			}
 		}
 		return (value != null) ? value : key;
+	}
+	
+	public static String getReplacement(String variable, String key) {
+		Map<String, String> replaceMap = model.batch.replace.get(variable);
+		if (replaceMap != null) {
+		    for (String k : replaceMap.keySet()) {
+		    	String v = replaceMap.get(k);
+		        if(key.contains(k)) {
+		        	key = key.replaceAll(k, v);
+		        	System.out.println("getReplacement("+variable+","+key+")");
+		        }
+		    }
+		}
+		return key;
 	}
 
 	public static XSSFWorkbook getWorkbook(String fileName) {

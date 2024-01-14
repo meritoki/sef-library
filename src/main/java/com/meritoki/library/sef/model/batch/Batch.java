@@ -39,6 +39,8 @@ public class Batch {
 	@JsonProperty
 	public Solar solar = new Solar();
 	@JsonProperty
+	public Map<String,Map<String,String>> replace = new HashMap<>();
+	@JsonProperty
 	public List<String> exclude = new ArrayList<>();
 	@JsonProperty
 	public Map<String,Map<String,String>> alias = new HashMap<>();
